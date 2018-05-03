@@ -38,8 +38,6 @@
 
 
 
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
 
 
     <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
@@ -65,7 +63,7 @@
 <script>
     var yiliaConfig = {
         fancybox: true,
-        animate: true,
+        animate: false,
         isHome: false,
         isPost: false,
         isArchive: false,
@@ -78,12 +76,13 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
     <script> yiliaConfig.rootUrl = "\/";</script>
-
 
 
 
@@ -263,12 +262,12 @@
     <!-- Tag Cloud Page -->
     <hr>
 <br>
-<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a><span class="category-list-count">1</span></li></ul>
+<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Programming/">Programming</a><span class="category-list-count">1</span></li></ul>
 
 <p class="count"></p>
 
 <div class="tags">
-    <a href="/tags/Hexo/" style="font-size: 16px; color: #808080">Hexo</a> <a href="/tags/node-js/" style="font-size: 16px; color: #808080">node.js</a>
+    <a href="/tags/Web前端/" style="font-size: 16px; color: #808080">Web前端</a>
 </div>
 <style>
     .category-list li{
