@@ -118,7 +118,7 @@ button::-moz-focus-inner {
   padding: 0;
 }
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 body {
   font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
@@ -552,7 +552,7 @@ a {
   text-align: center;
   margin: 13px 0;
   font-family: Times, Georgia, serif;
-  font-size: 30px;
+  font-size: 28px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -572,8 +572,8 @@ a {
   display: block;
   border: 5px solid #fff;
   border-radius: 50%;
-  width: 128px;
-  height: 128px;
+  width: 126px;
+  height: 126px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -751,13 +751,13 @@ a {
   font-family: Arial;
 }
 #header .header-nav .social a {
-  width: 37px;
-  height: 37px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin: 0 2px 6px;
   vertical-align: middle;
-  font-size: 24.42px;
-  line-height: 37px;
+  font-size: 23.1px;
+  line-height: 35px;
   text-align: center;
   color: #fff;
   background: #6f7170;
@@ -1223,7 +1223,7 @@ body .ui-tooltip {
   color: #999;
   position: relative;
   margin-right: 10px;
-  font: 16px FontAwesome;
+  font: 14px FontAwesome;
 }
 .archive-article-inner .article-meta .article-category:before {
   float: left;
@@ -1712,7 +1712,7 @@ li:hover {
   bottom: 1em;
   left: 0;
   margin-left: 0;
-  padding: 6px 10px 10px 50px;
+  padding: 6px 10px 10px 54px;
   border-radius: 2.8%;
   overflow: auto;
 }
@@ -2077,7 +2077,7 @@ aside.comment-bar:active {
   color: #999;
   position: relative;
   margin-right: 10px;
-  font: 16px FontAwesome;
+  font: 14px FontAwesome;
 }
 .archive-article-inner .article-meta .article-category:before {
   float: left;
@@ -2725,40 +2725,40 @@ pre .javascript .function {
   font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Lucida Grande", Verdana, "Helvetica Neue", Arial;
 }
 .tagcloud a.color0 {
-  background: #88acdb;
+  background: #ba8f6c;
 }
 .tagcloud a.color0::before {
-  border-right-color: #88acdb;
+  border-right-color: #ba8f6c;
 }
 .tagcloud a.color1 {
-  background: #ffa07a;
+  background: #ff945c;
 }
 .tagcloud a.color1::before {
-  border-right-color: #ffa07a;
+  border-right-color: #ff945c;
 }
 .tagcloud a.color2 {
-  background: #f08080;
+  background: #7b5d5f;
 }
 .tagcloud a.color2::before {
-  border-right-color: #f08080;
+  border-right-color: #7b5d5f;
 }
 .tagcloud a.color3 {
-  background: #76becc;
+  background: #f5c7b7;
 }
 .tagcloud a.color3::before {
-  border-right-color: #76becc;
+  border-right-color: #f5c7b7;
 }
 .tagcloud a.color4 {
-  background: #918597;
+  background: #cfb7c4;
 }
 .tagcloud a.color4::before {
-  border-right-color: #918597;
+  border-right-color: #cfb7c4;
 }
 .tagcloud a.color5 {
-  background: #6fc0e4;
+  background: #918597;
 }
 .tagcloud a.color5::before {
-  border-right-color: #6fc0e4;
+  border-right-color: #918597;
 }
 .tagcloud a.color6 {
   background: #bc8f8f;
@@ -2803,7 +2803,7 @@ pre .javascript .function {
 .article-category::before {
   float: left;
   color: #999;
-  font: 16px FontAwesome;
+  font: 14px FontAwesome;
   margin-right: 5px;
   margin-top: 0.333333333333333rem;
 }
@@ -2820,7 +2820,7 @@ pre .javascript .function {
 .article-pop-out:before {
   color: #999;
   content: "\f08d";
-  font: 16px FontAwesome;
+  font: 14px FontAwesome;
   float: left;
   margin-right: 5px;
   margin-top: 0.333333333333333rem;
@@ -3059,4 +3059,14 @@ p.no-result {
   color: #808080;
   font-family: Times, Georgia serif;
   border-bottom: 2px solid #d3d3d3;
+}
+body {
+  background: #808080;
+}
+.article-header {
+  border-left: 5px solid #666;
+}
+.article-more-link a {
+  background: #4d4d4d;
+  font-size: 0.8em;
 }
