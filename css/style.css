@@ -2380,7 +2380,7 @@ pre .javascript .function {
   color: #c397d8;
 }
 #footer {
-  font-size: 1rem;
+  font-size: 12px;
   font-family: Helvetica, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   text-shadow: 0 1px #fff;
   position: absolute;
@@ -2408,9 +2408,10 @@ pre .javascript .function {
 #footer #busuanzi_value_site_uv,
 #footer #busuanzi_container_page_pv {
   font-family: Monaco, Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco;
+  font-size: 12px;
 }
 #footer .visit {
-  font-size: 0.88rem;
+  font-size: 12px;
 }
 #footer .visit .fa {
   padding-right: 0.25em;
