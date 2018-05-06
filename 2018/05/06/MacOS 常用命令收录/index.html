@@ -15,16 +15,18 @@
 
 
 
-<meta name="description" content="Stay hungry Stay foolish">
-<meta property="og:type" content="website">
-<meta property="og:title" content="forAllBright&#39;s Blog">
-<meta property="og:url" content="https://forallbright.github.io/archives/index.html">
+<meta name="description" content="持续更新！ 文件类$ tree 作用：输出目录树层结构  输出目录树 n 层 1$ tree -L n">
+<meta name="keywords" content="软件工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac 常用命令收录">
+<meta property="og:url" content="https://forallbright.github.io/2018/05/06/MacOS 常用命令收录/index.html">
 <meta property="og:site_name" content="forAllBright&#39;s Blog">
-<meta property="og:description" content="Stay hungry Stay foolish">
+<meta property="og:description" content="持续更新！ 文件类$ tree 作用：输出目录树层结构  输出目录树 n 层 1$ tree -L n">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-06T05:21:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="forAllBright&#39;s Blog">
-<meta name="twitter:description" content="Stay hungry Stay foolish">
+<meta name="twitter:title" content="Mac 常用命令收录">
+<meta name="twitter:description" content="持续更新！ 文件类$ tree 作用：输出目录树层结构  输出目录树 n 层 1$ tree -L n">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives | forAllBright&#39;s Blog</title>
+<title>Mac 常用命令收录 | forAllBright&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -64,8 +66,8 @@
         fancybox: true,
         animate: false,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -206,208 +208,164 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-MacOS 常用命令收录" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2018/05/06/MacOS 常用命令收录/" class="article-date">
+      <time datetime="2018-05-06T05:07:00.000Z" itemprop="datePublished">2018-05-06</time>
+</a>
+
+
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Mac 常用命令收录
+    </h1>
+  
+
+      </header>
       
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件工具/">软件工具</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/06/工具类网址收录/" class="archive-article-date">
-      <time datetime="2018-05-06T05:09:00.000Z" itemprop="datePublished">05-06</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/06/工具类网址收录/">工具类网址收录</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
+    <div class="article-entry" itemprop="articleBody">
+      
           
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+        <p><strong>持续更新！</strong></p>
+<h2 id="文件类"><a href="#文件类" class="headerlink" title="文件类"></a>文件类</h2><h4 id="tree"><a href="#tree" class="headerlink" title="$ tree"></a>$ tree</h4><blockquote>
+<p>作用：输出目录树层结构</p>
+</blockquote>
+<p>输出目录树 n 层</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tree -L n</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>输出目录树到文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tree -L 2 &gt;README.md //然后我们看下当前目录下的 README.md 文件</span><br></pre></td></tr></table></figure>
+<p>只显示文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tree -d -L n</span><br></pre></td></tr></table></figure>
+<p>显示时忽略某些文件夹或文件 (Ignore)</p>
+<pre><code class="bash">$ tree -I <span class="string">"models"</span>
+</code></pre>
+
+      
     </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件工具/">软件工具</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/05/06/MacOS 常用命令收录/">Mac 常用命令收录</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">forAllBright</a></p>
+        <p><span>发布时间:</span>2018-05-06, 13:07:00</p>
+        <p><span>最后更新:</span>2018-05-06, 13:21:18</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/05/06/MacOS 常用命令收录/" title="Mac 常用命令收录">https://forallbright.github.io/2018/05/06/MacOS 常用命令收录/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/06/MacOS 常用命令收录/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/05/06/工具类网址收录/">
+                    工具类网址收录
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/05/05/配置SublimeText3插件/">
+                    配置 SublimeText3 插件
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文件类"><span class="toc-text">文件类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#tree"><span class="toc-text">$ tree</span></a></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-4 i,
+        .toc-level-4 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+
+
+
+
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/06/MacOS 常用命令收录/" class="archive-article-date">
-      <time datetime="2018-05-06T05:07:00.000Z" itemprop="datePublished">05-06</time>
-</a>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/06/MacOS 常用命令收录/">Mac 常用命令收录</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/05/06/工具类网址收录/" title="上一篇: 工具类网址收录">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/05/05/配置SublimeText3插件/" title="下一篇: 配置 SublimeText3 插件">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
 
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件工具/">软件工具</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/05/配置SublimeText3插件/" class="archive-article-date">
-      <time datetime="2018-05-05T04:02:04.000Z" itemprop="datePublished">05-05</time>
-</a>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/工具类网址收录/">工具类网址收录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/MacOS 常用命令收录/">Mac 常用命令收录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/05/配置SublimeText3插件/">配置 SublimeText3 插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/04/Hexo搭建博客/">Hexo搭建博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/27/Hugo框架搭建博客/">Hugo框架搭建博客</a></li></ul>
 
 
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/05/配置SublimeText3插件/">配置 SublimeText3 插件</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Programming/">Programming</a>
-    </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件工具/">软件工具</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/05/04/Hexo搭建博客/" class="archive-article-date">
-      <time datetime="2018-05-04T08:31:01.000Z" itemprop="datePublished">05-04</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/04/Hexo搭建博客/">Hexo搭建博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Programming/">Programming</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web前端/">Web前端</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2018/04/27/Hugo框架搭建博客/" class="archive-article-date">
-      <time datetime="2018-04-27T02:44:05.000Z" itemprop="datePublished">04-27</time>
-</a>
-
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/27/Hugo框架搭建博客/">Hugo框架搭建博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Programming/">Programming</a>
-    </div>
-
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web前端/">Web前端</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">

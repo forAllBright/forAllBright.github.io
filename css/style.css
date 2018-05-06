@@ -118,10 +118,10 @@ button::-moz-focus-inner {
   padding: 0;
 }
 html {
-  font-size: 14px;
+  font-size: 20px;
 }
 body {
-  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   background: #fff;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -148,7 +148,7 @@ h3 {
 }
 h1 {
   font-size: 1.6rem;
-  font-family: "Segoe UI", "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Segoe UI", "Lucida Grande", Verdana, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
 }
 h2 {
   font-size: 1.4rem;
@@ -505,6 +505,9 @@ a {
   #container .toc-article a {
     color: #767676;
   }
+  #container li.toc-item {
+    line-height: 1.2;
+  }
   #container .copyright {
     width: 90%;
     padding: 0.5em 0.8em;
@@ -551,8 +554,9 @@ a {
 .header-author {
   text-align: center;
   margin: 13px 0;
-  font-family: Times, Georgia, serif;
-  font-size: 28px;
+  font-family: Comic Sans MS, Bookman, Palatino, Times, Georgia, serif;
+  font-weight: bold;
+  font-size: 34px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -572,8 +576,8 @@ a {
   display: block;
   border: 5px solid #fff;
   border-radius: 50%;
-  width: 126px;
-  height: 126px;
+  width: 132px;
+  height: 132px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -599,7 +603,7 @@ a {
   -webkit-animation-delay: 0.3s;
 }
 #header .profilepic:hover {
-  background: #fff;
+  background: Deepskyblue;
   border: 5px solid #88acdb;
   -webkit-box-shadow: 0 0 1.5em #88acdb;
   box-shadow: 0 0 1.5em #88acdb;
@@ -659,6 +663,7 @@ a {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-size: 16px;
 }
 #header .header-menu {
   font-weight: 550;
@@ -751,13 +756,13 @@ a {
   font-family: Arial;
 }
 #header .header-nav .social a {
-  width: 35px;
-  height: 35px;
+  width: 41px;
+  height: 41px;
   border-radius: 50%;
   margin: 0 2px 6px;
   vertical-align: middle;
-  font-size: 23.1px;
-  line-height: 35px;
+  font-size: 27.060000000000002px;
+  line-height: 41px;
   text-align: center;
   color: #fff;
   background: #6f7170;
@@ -1084,7 +1089,7 @@ color
   -webkit-box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
   box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
   color: #fff;
-  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   font-size: 0.9em;
   background: rgba(0,0,0,0.65);
 }
@@ -1223,7 +1228,7 @@ body .ui-tooltip {
   color: #999;
   position: relative;
   margin-right: 10px;
-  font: 14px FontAwesome;
+  font: 20px FontAwesome;
 }
 .archive-article-inner .article-meta .article-category:before {
   float: left;
@@ -1332,9 +1337,11 @@ body .ui-tooltip {
 .article-title {
   color: #696969;
   margin-left: 0px;
-  font-weight: 400;
+  font-weight: bold;
+/*font-size: 30px;*/
+  font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
   line-height: 1.3;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -1344,7 +1351,7 @@ body .ui-tooltip {
   transition: color 0.3s;
 }
 .article-title:hover {
-  color: #b0a0aa;
+  color: #b0a0ff;
 }
 .article-inner {
   position: relative;
@@ -1378,8 +1385,12 @@ body .ui-tooltip {
   line-height: 1.65em;
   padding: 0 2em;
 /*font-size 1rem*/
-  font-family: Comic Sans MS, Bookman, Palatino, "Microsoft YaHei", Tahoma, Arial;
-  font-size: 16px;
+/*  font-family: Comic Sans MS, Bookman, Palatino, "Microsoft YaHei",Tahoma, Arial
+*/
+/*font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial*/
+  font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
+  font-size: 18px;
+  font-weight: bold;
 }
 .article-entry blockquote {
   padding: 0.4em 20px;
@@ -1392,6 +1403,8 @@ body .ui-tooltip {
   background: rgba(255,255,255,0.7);
   border-left: 5px solid rgba(255,224,112,0.6);
   background: rgba(255,244,204,0.6);
+  font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
+  font-size: 16px;
 }
 .article-entry blockquote p {
   margin: 0.4em auto;
@@ -1477,7 +1490,7 @@ body .ui-tooltip {
 }
 .article-entry li {
   margin: 0.1em;
-  font-size: 1rem;
+  font-size: 17px;
 }
 .article-entry ul,
 .article-entry ol {
@@ -1501,11 +1514,11 @@ body .ui-tooltip {
   margin: 0;
 }
 .article-entry ul > li:before {
-  content: '\f054';
+  content: '\f0a9';
   font-family: FontAwesome;
-  font-size: 0.8em;
   margin-right: 0.5em;
-  color: #c8c8c8;
+/*color #c8c8c8*/
+  color: #000;
 }
 .article-entry h1 {
   margin-top: 30px;
@@ -1517,6 +1530,7 @@ body .ui-tooltip {
   border-bottom: 1px solid #ddd;
   text-align: center;
   font-size: 1.5rem;
+  font-family: San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
 }
 .article-entry h2:hover {
   color: #88acdb;
@@ -1534,6 +1548,7 @@ body .ui-tooltip {
   padding: 0.2em 0.6em;
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+  font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
 }
 .article-entry h3:hover a {
   text-decoration: underline;
@@ -1548,6 +1563,7 @@ body .ui-tooltip {
   color: #4169e1;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
+  font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
   background: #f3f8fd;
   border: 1px solid #d2ffff;
 }
@@ -1560,7 +1576,6 @@ body .ui-tooltip {
 .article-entry h5::after,
 .article-entry h6::after {
   content: " >>";
-  font-family: Tahoma;
 }
 .article-entry figure table {
   border: none;
@@ -1643,6 +1658,7 @@ body .ui-tooltip {
   height: 2.5em;
   margin: 1em auto;
   font-size: 1rem;
+  font-family: Comic Sans MS, Bookman, Palatino, Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
   background: rgba(158,188,226,0.75);
 }
 #article-nav:hover {
@@ -1657,6 +1673,9 @@ body .ui-tooltip {
 }
 .article-nav-title a:hover {
   font-style: italic;
+  color: #7b68ee;
+  font-size: 24px;
+  font-weight: bold;
 }
 #article-nav-older {
   padding-right: 1em;
@@ -1727,12 +1746,12 @@ li:hover {
   bottom: 1em;
   left: 0;
   margin-left: 0;
-  padding: 6px 10px 10px 54px;
+  padding: 6px 10px 10px 42px;
   border-radius: 2.8%;
   overflow: auto;
 }
 #toc {
-  font-size: 0.9rem;
+  font-size: 13px;
   line-height: 1.65em;
 }
 #toc .toc-title {
@@ -1777,7 +1796,8 @@ li:hover {
   color: #808080;
 }
 #toc ol.toc a.toc-link:visited {
-  color: #f48385;
+/*color rgba(244, 131, 133, 1)*/
+  color: #00f;
 }
 #toc ol.toc a.toc-link:hover {
   color: #88acdb;
@@ -1788,13 +1808,28 @@ li:hover {
   padding-left: 1.25em;
   margin: 4px 0;
 }
+#toc a.toc-link {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+#toc li.toc-item {
+  line-height: 1.45em;
+}
+#toc li.toc-item > i {
+  position: relative;
+  bottom: 0.35em;
+}
 .copyright {
   width: 85%;
   max-width: 45em;
   margin: 1.2em auto 0;
   padding: 0.5em 1.8em;
   border: 1px solid #d3d3d3;
-  font-size: 0.93rem;
+/*font-size: .93rem;*/
+  font-size: 14px;
   font-family: Comic Sans MS, Bookman, Palatino, Times New Roman;
   line-height: 1.6em;
   word-break: break-all;
@@ -2093,7 +2128,7 @@ aside.comment-bar:active {
   color: #999;
   position: relative;
   margin-right: 10px;
-  font: 14px FontAwesome;
+  font: 20px FontAwesome;
 }
 .archive-article-inner .article-meta .article-category:before {
   float: left;
@@ -2143,7 +2178,7 @@ aside.comment-bar:active {
 }
 .article-entry pre,
 .article-entry code {
-  font-family: Monaco, Courier, Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei";
+  font-family: Monaco, Courier, Monaco, Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei";
   font-size: 0.8em;
 }
 .article-entry pre code {
@@ -2211,7 +2246,7 @@ aside.comment-bar:active {
 }
 .article-entry .gist .gist-file {
   border: none;
-  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco monospace;
+  font-family: Monaco, Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco monospace;
   margin: 0;
 }
 .article-entry .gist .gist-file .gist-data {
@@ -2293,7 +2328,7 @@ pre .constant {
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #b9ca4a;
+  color: #3cb371;
 }
 pre .string,
 pre .value,
@@ -2301,7 +2336,7 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #b9ca4a;
+  color: #3cb371;
 }
 pre .css .hexcolor {
   color: #70c0b1;
@@ -2321,8 +2356,8 @@ pre .javascript .function {
   color: #c397d8;
 }
 #footer {
-  font-size: 0.8rem;
-  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 1rem;
+  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
   text-shadow: 0 1px #fff;
   position: absolute;
   bottom: 20px;
@@ -2337,7 +2372,7 @@ pre .javascript .function {
   float: right;
 }
 #footer .outer {
-  padding: 0 30px;
+  padding: 0 200px;
 }
 #footer .fa-heart {
   color: #f00;
@@ -2348,7 +2383,7 @@ pre .javascript .function {
 }
 #footer #busuanzi_value_site_uv,
 #footer #busuanzi_container_page_pv {
-  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco;
+  font-family: Monaco, Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco;
 }
 #footer .visit {
   font-size: 0.88rem;
@@ -2743,7 +2778,7 @@ pre .javascript .function {
   border-radius: 0 5px 5px 0;
   margin: 5px 9px 5px 8px;
   opacity: 0.75;
-  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Lucida Grande", Verdana, "Helvetica Neue", Arial;
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei" "Lucida Grande", Verdana, "Helvetica Neue", Arial;
 }
 .tagcloud a.color0 {
   background: #ba8f6c;
@@ -2824,7 +2859,7 @@ pre .javascript .function {
 .article-category::before {
   float: left;
   color: #999;
-  font: 14px FontAwesome;
+  font: 20px FontAwesome;
   margin-right: 5px;
   margin-top: 0.333333333333333rem;
 }
@@ -2841,7 +2876,7 @@ pre .javascript .function {
 .article-pop-out:before {
   color: #999;
   content: "\f08d";
-  font: 14px FontAwesome;
+  font: 20px FontAwesome;
   float: left;
   margin-right: 5px;
   margin-top: 0.333333333333333rem;
@@ -2868,12 +2903,15 @@ pre .javascript .function {
   display: block;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
+  background-color: rgba(200,0,200,0.5);
 }
 ::-webkit-scrollbar-thumb:hover {
   border-radius: 8px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,255,0.5);
+}
+::-webkit-scrollbar {
+  display: none;
 }
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb {
