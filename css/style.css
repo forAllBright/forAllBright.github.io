@@ -2381,12 +2381,12 @@ pre .javascript .function {
 }
 #footer {
   font-size: 12px;
-  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: Helvetica, Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial, sans-serif;
   text-shadow: 0 1px #fff;
   position: absolute;
   bottom: 20px;
   opacity: 0.75;
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
 #footer .footer-left {
@@ -2396,7 +2396,7 @@ pre .javascript .function {
   float: right;
 }
 #footer .outer {
-  padding: 0 200px;
+  padding: 0 0px;
 }
 #footer .fa-heart {
   color: #f00;
