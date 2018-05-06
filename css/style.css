@@ -252,7 +252,8 @@ a {
 #container .left-col .intrude-less {
   width: 76%;
   text-align: center;
-  margin: 112px auto 0;
+/*margin: 112px auto 0;*/
+  margin: 4px auto 0;
 }
 #container .left-col li:hover {
   background: none;
@@ -1338,8 +1339,8 @@ body .ui-tooltip {
   color: #696969;
   margin-left: 0px;
   font-weight: bold;
-/*font-size: 30px;*/
-  font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
+  font-size: 24px;
+  text-shadow: 0.2px 0.2px 0.2px #000ff0;
   line-height: 1.3;
   margin-bottom: 40px;
   -webkit-transition: color 0.3s;
@@ -1352,6 +1353,7 @@ body .ui-tooltip {
 }
 .article-title:hover {
   color: #b0a0ff;
+  font-size: 28px;
 }
 .article-inner {
   position: relative;
@@ -1389,8 +1391,8 @@ body .ui-tooltip {
 */
 /*font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial*/
   font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: normal;
 }
 .article-entry blockquote {
   padding: 0.4em 20px;
@@ -1490,7 +1492,8 @@ body .ui-tooltip {
 }
 .article-entry li {
   margin: 0.1em;
-  font-size: 17px;
+  font-size: 16.5px;
+  font-weight: bold;
 }
 .article-entry ul,
 .article-entry ol {
@@ -1524,13 +1527,13 @@ body .ui-tooltip {
   margin-top: 30px;
 }
 .article-entry h2 {
-  margin: 0.5em auto;
+  margin: 0.4em auto;
   color: #66be66;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #ddd;
   text-align: center;
-  font-size: 1.5rem;
-  font-family: San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
+  font-size: 22px;
+  font-family: San Francisco, Helvetica, Bookman, Palatino, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
 }
 .article-entry h2:hover {
   color: #88acdb;
@@ -1544,26 +1547,31 @@ body .ui-tooltip {
   margin: 0.5em auto;
   color: #438aac;
   background: rgba(243,248,253,0.6);
-  border: 1px solid #d2e8fa;
-  padding: 0.2em 0.6em;
+/*border 1px solid #ffffff*/
+  padding: 0.2em 0.8em;
   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
   font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
+  font-size: 18px;
 }
 .article-entry h3:hover a {
   text-decoration: underline;
 }
+.article-entry h3::before {
+  content: "-- ";
+}
 .article-entry h3::after {
-  content: " >";
+  content: " --";
 }
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
   margin-top: 20px;
-  color: #4169e1;
+  color: #59a58d;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
   font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
+  font-size: 16px;
   background: #f3f8fd;
   border: 1px solid #d2ffff;
 }
@@ -1575,7 +1583,22 @@ body .ui-tooltip {
 .article-entry h4::after,
 .article-entry h5::after,
 .article-entry h6::after {
-  content: " >>";
+  content: " ---";
+}
+.article-entry h4::before,
+.article-entry h5::before,
+.article-entry h6::before {
+  content: "--- ";
+}
+.article-entry h5,
+.article-entry h6 {
+  font-size: 14px;
+}
+.article-entry h5 {
+  color: #222;
+}
+.article-entry h6 {
+  color: #777;
 }
 .article-entry figure table {
   border: none;
@@ -1725,7 +1748,7 @@ li:hover {
 #tocButton {
   position: fixed;
   left: 220px;
-  top: 385px;
+  top: 457px;
   font-size: 0.9em;
   font-weight: bold;
   font-family: inherit;
@@ -1742,7 +1765,8 @@ li:hover {
 .toc-article {
   position: fixed;
   width: 230px;
-  top: 378px;
+/*top toc-top*/
+  top: 450px;
   bottom: 1em;
   left: 0;
   margin-left: 0;
@@ -2769,7 +2793,8 @@ pre .javascript .function {
   text-decoration: none;
   font-weight: normal;
   font-size: 0.75rem;
-  color: #fff;
+/*color #fff*/
+  color: #516d6d;
   height: 1.125rem;
   line-height: 1.125rem;
   float: left;
@@ -2858,7 +2883,8 @@ pre .javascript .function {
 .article-tag::before,
 .article-category::before {
   float: left;
-  color: #999;
+/*color #999*/
+  color: #000;
   font: 20px FontAwesome;
   margin-right: 5px;
   margin-top: 0.333333333333333rem;
