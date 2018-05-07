@@ -1491,9 +1491,9 @@ body .ui-tooltip {
   white-space: nowrap;
 }
 .article-entry li {
-  margin: 0.1em;
+  margin: 10px;
   font-size: 16.5px;
-  font-weight: bold;
+  font-family: Monaco, San Francisco, Bookman, Palatino, Helvetica, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
 }
 .article-entry ul,
 .article-entry ol {
@@ -1514,7 +1514,7 @@ body .ui-tooltip {
 }
 .article-entry ul > li {
   list-style: none;
-  margin: 0;
+  margin: 0.5em;
 }
 .article-entry ul > li:before {
   content: '\f0a9';
