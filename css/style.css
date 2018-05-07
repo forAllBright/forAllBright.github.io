@@ -3156,3 +3156,6 @@ body {
   background: #4d4d4d;
   font-size: 0.8em;
 }
+.scroll a .fa {
+  color: rgba(0,0,255,0.5);
+}
