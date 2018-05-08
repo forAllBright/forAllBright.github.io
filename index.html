@@ -213,6 +213,149 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-初探前端编程的结构" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/05/08/初探前端编程的结构/" class="article-date">
+      <time datetime="2018-05-08T14:08:00.000Z" itemprop="datePublished">2018-05-08</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/08/初探前端编程的结构/">初探前端编程的结构</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>在捣鼓博客主题源码中学习！</p>
+<blockquote>
+<p>—2018-05-08 22:08:00—</p>
+</blockquote>
+<p>今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。  </p>
+<p>在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。  </p>
+<p>尝试将 Yelee 主题的本地搜索源码移植到 Landscape-plus 主题上代替其自带的百度搜索的功能，主要将其中的对搜索框的修饰代码和搜索动作搜索结果的呈现这些 js 代码嵌入进去。  </p>
+<p>其中疑惑的几点：</p>
+<ul>
+<li>pc.js 调用 <code>search.js</code> 产生的新的 <code>search</code> 函数没有被其他代码直接调用，而是用了一个其中的 <code>resertSearch</code> 的函数，暂时理解为调用 <code>resertSearch</code> 函数会自动加载前面的部分，实现了调用。有待确认。</li>
+<li>最后编译本地调试后发现搜索框存在，但是并不能完成搜索的功能，这让我很不解，可能还有部分代码移植的有问题。</li>
+</ul>
+<p>暂时还是先用 Yelee 的主题写博客，以上工作的代码已经备份到 coding.net 。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web前端/">Web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-操作系统_读书笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/05/07/操作系统_读书笔记/" class="article-date">
+      <time datetime="2018-05-07T14:10:00.000Z" itemprop="datePublished">2018-05-07</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/07/操作系统_读书笔记/">工具类网址收录</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>在这里记录《操作系统》的读书笔记，持续更新。</p>
+<h2 id="1，2章"><a href="#1，2章" class="headerlink" title="1，2章"></a>1，2章</h2><p>操作系统是一种软件，是在硬件与用户软件之间之间的夹层，是对硬件的抽象，让上层应用程序感觉上是对一个对硬件设备驱动，</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书笔记/">读书笔记</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-元启发式算法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">

@@ -16,18 +16,18 @@
 
 
 
-<meta name="description" content="1. SublimeText3 插件列表 官方插件网站   Markdown编辑，可更换多种主题–Markdown​Editing 边栏主题切换，标签卡，状态栏等的设置，十分丰富–Boxy Theme 边栏右键增强–SideBar Enhancements">
-<meta name="keywords" content="软件工具">
+<meta name="description" content="在捣鼓博客主题源码中学习！  —2018-05-08 22:08:00—  今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。   在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。   尝试将 Yelee 主题的本地搜索源码移植到 Lan">
+<meta name="keywords" content="Web前端,随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="配置 SublimeText3 插件">
-<meta property="og:url" content="https://forallbright.github.io/2018/05/05/配置SublimeText3插件/index.html">
+<meta property="og:title" content="初探前端编程的结构">
+<meta property="og:url" content="https://forallbright.github.io/2018/05/08/初探前端编程的结构/index.html">
 <meta property="og:site_name" content="forAllBright&#39;s Blog">
-<meta property="og:description" content="1. SublimeText3 插件列表 官方插件网站   Markdown编辑，可更换多种主题–Markdown​Editing 边栏主题切换，标签卡，状态栏等的设置，十分丰富–Boxy Theme 边栏右键增强–SideBar Enhancements">
+<meta property="og:description" content="在捣鼓博客主题源码中学习！  —2018-05-08 22:08:00—  今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。   在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。   尝试将 Yelee 主题的本地搜索源码移植到 Lan">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-06T02:26:21.000Z">
+<meta property="og:updated_time" content="2018-05-08T14:22:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="配置 SublimeText3 插件">
-<meta name="twitter:description" content="1. SublimeText3 插件列表 官方插件网站   Markdown编辑，可更换多种主题–Markdown​Editing 边栏主题切换，标签卡，状态栏等的设置，十分丰富–Boxy Theme 边栏右键增强–SideBar Enhancements">
+<meta name="twitter:title" content="初探前端编程的结构">
+<meta name="twitter:description" content="在捣鼓博客主题源码中学习！  —2018-05-08 22:08:00—  今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。   在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。   尝试将 Yelee 主题的本地搜索源码移植到 Lan">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -57,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>配置 SublimeText3 插件 | forAllBright&#39;s Blog</title>
+<title>初探前端编程的结构 | forAllBright&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -210,11 +210,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-配置SublimeText3插件" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-初探前端编程的结构" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/05/05/配置SublimeText3插件/" class="article-date">
-      <time datetime="2018-05-05T04:02:04.000Z" itemprop="datePublished">2018-05-05</time>
+      <a href="/2018/05/08/初探前端编程的结构/" class="article-date">
+      <time datetime="2018-05-08T14:08:00.000Z" itemprop="datePublished">2018-05-08</time>
 </a>
 
 
@@ -229,7 +229,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      配置 SublimeText3 插件
+      初探前端编程的结构
     </h1>
   
 
@@ -244,7 +244,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件工具/">软件工具</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web前端/">Web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -254,33 +254,19 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="1-SublimeText3-插件列表"><a href="#1-SublimeText3-插件列表" class="headerlink" title="1. SublimeText3 插件列表"></a>1. SublimeText3 插件列表</h2><blockquote>
-<p><a href="https://packagecontrol.io/" target="_blank" rel="noopener">官方插件网站</a></p>
+        <p>在捣鼓博客主题源码中学习！</p>
+<blockquote>
+<p>—2018-05-08 22:08:00—</p>
 </blockquote>
+<p>今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。  </p>
+<p>在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。  </p>
+<p>尝试将 Yelee 主题的本地搜索源码移植到 Landscape-plus 主题上代替其自带的百度搜索的功能，主要将其中的对搜索框的修饰代码和搜索动作搜索结果的呈现这些 js 代码嵌入进去。  </p>
+<p>其中疑惑的几点：</p>
 <ul>
-<li>Markdown编辑，可更换多种主题–<a href="https://packagecontrol.io/packages/MarkdownEditing" target="_blank" rel="noopener">Markdown​Editing</a></li>
-<li>边栏主题切换，标签卡，状态栏等的设置，十分丰富–<a href="https://packagecontrol.io/packages/Boxy%20Theme" target="_blank" rel="noopener">Boxy Theme</a></li>
-<li>边栏右键增强–<a href="https://packagecontrol.io/packages/SideBarEnhancements" target="_blank" rel="noopener">SideBar Enhancements</a><a id="more"></a></li>
-<li>边栏图标高亮–<a href="https://packagecontrol.io/packages/A%20File%20Icon" target="_blank" rel="noopener">A File Icon</a></li>
-<li>将当前文件编码转换，多种编码–<a href="https://packagecontrol.io/packages/ConvertToUTF8" target="_blank" rel="noopener">Convert​To​UTF8</a></li>
-<li>括号高亮匹配–<a href="https://packagecontrol.io/packages/BracketHighlighter" target="_blank" rel="noopener">Bracket Highlighter</a></li>
-<li>等号对齐–<a href="https://packagecontrol.io/packages/Alignment" target="_blank" rel="noopener">Alignment</a></li>
-<li>Python 自动补全，函数跳转等–<a href="https://packagecontrol.io/packages/Anaconda" target="_blank" rel="noopener">Anaconda</a></li>
-<li>运行 python–<a href="https://packagecontrol.io/packages/Conda" target="_blank" rel="noopener">Conda</a></li>
-<li>编码检测–<a href="https://packagecontrol.io/packages/AutoPEP8" target="_blank" rel="noopener">AutoPEP8</a></li>
-<li>多种语言的自动格式化–[CoolFormat(<a href="https://packagecontrol.io/packages/CoolFormat)]" target="_blank" rel="noopener">https://packagecontrol.io/packages/CoolFormat)]</a></li>
-<li>任务标签–<a href="https://packagecontrol.io/packages/PlainTasks" target="_blank" rel="noopener">PlainTasks</a></li>
-<li>python 的基于PEP8的自动格式化–<a href="https://packagecontrol.io/packages/Python%20PEP8%20Autoformat" target="_blank" rel="noopener">Python PEP8 Autoformat</a></li>
-<li>代码检测–<a href="https://packagecontrol.io/packages/SublimeLinter" target="_blank" rel="noopener">SublimeLinter</a></li>
-<li>代码检测 python<a href="https://packagecontrol.io/packages/SublimeLinter-flake8" target="_blank" rel="noopener">SublimLinter-flake8</a></li>
+<li>pc.js 调用 <code>search.js</code> 产生的新的 <code>search</code> 函数没有被其他代码直接调用，而是用了一个其中的 <code>resertSearch</code> 的函数，暂时理解为调用 <code>resertSearch</code> 函数会自动加载前面的部分，实现了调用。有待确认。</li>
+<li>最后编译本地调试后发现搜索框存在，但是并不能完成搜索的功能，这让我很不解，可能还有部分代码移植的有问题。</li>
 </ul>
-<h2 id="2-用户设置"><a href="#2-用户设置" class="headerlink" title="2. 用户设置"></a>2. 用户设置</h2><ul>
-<li>Sublime text -&gt; Preferences -&gt; Settings -&gt; User setting</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&quot;trim_trailing_white_space_on_save&quot;: true,</span><br><span class="line">&quot;ensure_newline_at_eof_on_save&quot;: true,</span><br><span class="line">&quot;font_face&quot;: &quot;Microsoft YaHei Mono&quot;,</span><br><span class="line">&quot;disable_tab_abbreviations&quot;: true,</span><br><span class="line">&quot;translate_tabs_to_spaces&quot;: true,</span><br><span class="line">&quot;tab_size&quot;: 2,</span><br><span class="line">&quot;draw_minimap_border&quot;: true,</span><br><span class="line">&quot;save_on_focus_lost&quot;: true,</span><br><span class="line">&quot;highlight_line&quot;: true,</span><br><span class="line">&quot;word_wrap&quot;: &quot;true&quot;,</span><br><span class="line">&quot;fade_fold_buttons&quot;: false,</span><br><span class="line">&quot;bold_folder_labels&quot;: true,</span><br><span class="line">&quot;highlight_modified_tabs&quot;: true,</span><br><span class="line">&quot;default_line_ending&quot;: &quot;unix&quot;,</span><br><span class="line">&quot;auto_find_in_selection&quot;: true,</span><br></pre></td></tr></table></figure>
-<h2 id="3-参考"><a href="#3-参考" class="headerlink" title="3. 参考"></a>3. 参考</h2><blockquote>
-<p><a href="https://janikarhunen.fi/pages/slides.html#slides" target="_blank" rel="noopener">https://janikarhunen.fi/pages/slides.html#slides</a><br><a href="https://www.zhihu.com/question/19976788/answer/48037047" target="_blank" rel="noopener">https://www.zhihu.com/question/19976788/answer/48037047</a><br><a href="https://www.zhihu.com/question/24736400" target="_blank" rel="noopener">https://www.zhihu.com/question/24736400</a></p>
-</blockquote>
+<p>暂时还是先用 Yelee 的主题写博客，以上工作的代码已经备份到 coding.net 。</p>
 
       
     </div>
@@ -289,13 +275,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/05/05/配置SublimeText3插件/">配置 SublimeText3 插件</a></p>
+        <p><span>本文标题:</span><a href="/2018/05/08/初探前端编程的结构/">初探前端编程的结构</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">forAllBright</a></p>
-        <p><span>发布时间:</span>2018-05-05, 12:02:04</p>
-        <p><span>最后更新:</span>2018-05-06, 10:26:21</p>
+        <p><span>发布时间:</span>2018-05-08, 22:08:00</p>
+        <p><span>最后更新:</span>2018-05-08, 22:22:07</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/05/05/配置SublimeText3插件/" title="配置 SublimeText3 插件">https://forallbright.github.io/2018/05/05/配置SublimeText3插件/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/05/配置SublimeText3插件/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/05/08/初探前端编程的结构/" title="初探前端编程的结构">https://forallbright.github.io/2018/05/08/初探前端编程的结构/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/08/初探前端编程的结构/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -307,16 +293,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/05/06/MacOS 常用命令收录/">
-                    Mac 常用命令收录
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/05/04/Hexo搭建博客/">
-                    Hexo搭建博客
+                <a href="/2018/05/07/操作系统_读书笔记/">
+                    工具类网址收录
                 </a>
             </div>
         
@@ -328,7 +308,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-SublimeText3-插件列表"><span class="toc-text">1. SublimeText3 插件列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-用户设置"><span class="toc-text">2. 用户设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-参考"><span class="toc-text">3. 参考</span></a></li></ol>
+            
         
     </div>
     <style>
@@ -384,15 +364,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/05/06/MacOS 常用命令收录/" title="上一篇: Mac 常用命令收录">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/05/04/Hexo搭建博客/" title="下一篇: Hexo搭建博客">
+            <a href="/2018/05/07/操作系统_读书笔记/" title="下一篇: 工具类网址收录">
                 <i class="fa fa-angle-right"></i>
             </a>
         
