@@ -16,13 +16,13 @@
 
 
 
-<meta name="description" content="操作系统的基本概念“差不多”精神操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。 硬件知识概念上的结构： 一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。     流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。       执行单元：缓存是让执行单元发挥最大利用效率的">
+<meta name="description" content="操作系统的基本概念“差不多”精神操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。 硬件知识概念上的结构： 一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。  &amp;lt;!—more–&amp;gt;  流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。       执行单元：缓存是">
 <meta name="keywords" content="读书笔记,操作系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="操作系统的-3 | 4 章">
 <meta property="og:url" content="https://forallbright.github.io/2018/05/09/操作系统_读书笔记_3_4/index.html">
 <meta property="og:site_name" content="forAllBright&#39;s Blog">
-<meta property="og:description" content="操作系统的基本概念“差不多”精神操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。 硬件知识概念上的结构： 一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。     流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。       执行单元：缓存是让执行单元发挥最大利用效率的">
+<meta property="og:description" content="操作系统的基本概念“差不多”精神操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。 硬件知识概念上的结构： 一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。  &amp;lt;!—more–&amp;gt;  流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。       执行单元：缓存是">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-121639.png">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-122102.png">
@@ -30,10 +30,10 @@
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-122428.png">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-123138.png">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-130416.png">
-<meta property="og:updated_time" content="2018-05-09T14:18:02.000Z">
+<meta property="og:updated_time" content="2018-05-09T14:20:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统的-3 | 4 章">
-<meta name="twitter:description" content="操作系统的基本概念“差不多”精神操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。 硬件知识概念上的结构： 一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。     流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。       执行单元：缓存是让执行单元发挥最大利用效率的">
+<meta name="twitter:description" content="操作系统的基本概念“差不多”精神操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。 硬件知识概念上的结构： 一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。  &amp;lt;!—more–&amp;gt;  流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。       执行单元：缓存是">
 <meta name="twitter:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-121639.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
@@ -265,9 +265,8 @@
 <h3 id="硬件知识"><a href="#硬件知识" class="headerlink" title="硬件知识"></a>硬件知识</h3><h4 id="概念上的结构："><a href="#概念上的结构：" class="headerlink" title="概念上的结构："></a>概念上的结构：</h4><ul>
 <li><p>一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。</p>
 <p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-121639.png" alt=""></p>
+<p>&lt;!—more–&gt;</p>
 </li>
-</ul>
-<ul>
 <li><p>流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。  </p>
 <p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-122102.png" alt=""></p>
 </li>
@@ -347,8 +346,6 @@
 <h4 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h4><ul>
 <li>系统 API 过于复杂，是给专门的编程人员使用。而这个 Shell(壳) 就像是操作系统之上的一层壳，有固定的命令或图形操作方式给用户使用；用户可以通过这个 Shell 中的命令来调用系统服务，（固定的命令保证了用户不能直接使用用户态的核心服务，而是有界限的只用 Shell 提供的这些，保证了系统安全）。</li>
 <li>一个 Shell 就是一个循环程序，始终在等待用户的输入，当用户输入后程序继续执行并 fork 一个子进程来完成用户的命令任务，父进程等待子进程结束。</li>
-</ul>
-<ul>
 <li><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">op1=>operation: 网状结构，各个功能模块之间错综复杂
 op2=>operation: 层次结构，将用户态和内核态分开，系统服务都在内核态，这增加了从用户态向内核态之间过渡的时间成本
 op3=>operation: 微内核结构，将核心服务留在内核态，其他的系统服务放在用户态。现在主流。
@@ -365,7 +362,7 @@ op1(right)->op2->op3</textarea><textarea id="flowchart-0-options" style="display
         <p><span>本文标题:</span><a href="/2018/05/09/操作系统_读书笔记_3_4/">操作系统的-3 | 4 章</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">forAllBright</a></p>
         <p><span>发布时间:</span>2018-05-09, 20:10:09</p>
-        <p><span>最后更新:</span>2018-05-09, 22:18:02</p>
+        <p><span>最后更新:</span>2018-05-09, 22:20:23</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/05/09/操作系统_读书笔记_3_4/" title="操作系统的-3 | 4 章">https://forallbright.github.io/2018/05/09/操作系统_读书笔记_3_4/</a>
             <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/09/操作系统_读书笔记_3_4/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
