@@ -213,6 +213,232 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-操作系统_读书笔记_3_4" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/05/09/操作系统_读书笔记_3_4/" class="article-date">
+      <time datetime="2018-05-09T12:10:09.000Z" itemprop="datePublished">2018-05-09</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/09/操作系统_读书笔记_3_4/">操作系统的-3 | 4 章</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="操作系统的基本概念"><a href="#操作系统的基本概念" class="headerlink" title="操作系统的基本概念"></a>操作系统的基本概念</h2><h3 id="“差不多”精神"><a href="#“差不多”精神" class="headerlink" title="“差不多”精神"></a>“差不多”精神</h3><p>操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。</p>
+<h3 id="硬件知识"><a href="#硬件知识" class="headerlink" title="硬件知识"></a>硬件知识</h3><h4 id="概念上的结构："><a href="#概念上的结构：" class="headerlink" title="概念上的结构："></a>概念上的结构：</h4><ul>
+<li><p>一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-121639.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>流水线是结构：为了提高效率，模仿工业流水线结构，即每一级都在工作，但是每一级的工作内容都不一样，呈时序关系。  </p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-122102.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>执行单元：缓存是让执行单元发挥最大利用效率的结构。</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-122246.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p>存储结构：金字塔形，容量在增大，价格在降低；容量在增大，速度在减小。</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-122428.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E6%96%B7" target="_blank" rel="noopener">中断</a>：OS 中最重要的机制，是 OS 获取PC 控制权的根本保证。</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-123138.png" alt=""></p>
+</li>
+</ul>
+<h4 id="抽象"><a href="#抽象" class="headerlink" title="抽象"></a>抽象</h4><ul>
+<li>根本上存在但是现实中不存在。</li>
+<li>来源于现实，统一于现实，超出现实。</li>
+<li>操作系统的抽象在于它来源于硬件，但超出了简单将硬件相叠加的功能，为上层应用提供了更大的资源。</li>
+<li>软件中不同功能块之间也是一种抽象，对其他功能块而言是一个完整的功能，而非细节描述。</li>
+</ul>
+<h4 id="内核态与用户态"><a href="#内核态与用户态" class="headerlink" title="内核态与用户态"></a>内核态与用户态</h4><ul>
+<li><p>内核态</p>
+<p>拥有最多资源，最高特权。管理 CPU、内存、诊断测试、部分文件系统。</p>
+</li>
+<li><p>用户态</p>
+<p>拥有有限的资源，有限的权限。应用程序的管理。</p>
+</li>
+<li><p>状态的识别</p>
+<p>CPU 的状态字的设定，在一个程序运行时，此时 CPU 设定的什么状态这个程序就工作在什么态。</p>
+</li>
+<li><p>实现</p>
+<p>这种两个状态相分离的实现，是通过“地址翻译”来实现，对用户态下的程序的每一条指令都会检查；而内核态下的程序可以绕过这个翻译。 这是否就为病毒提供可获取最高特权的可能？</p>
+</li>
+</ul>
+<h4 id="操作系统的结构演变"><a href="#操作系统的结构演变" class="headerlink" title="操作系统的结构演变"></a>操作系统的结构演变</h4><div id="flowchart-0" class="flow-chart"></div>
+
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-130416.png" alt=""></p>
+<h4 id="进程、内存、文件"><a href="#进程、内存、文件" class="headerlink" title="进程、内存、文件"></a>进程、内存、文件</h4><ul>
+<li><p>进程 - 在运行中的程序</p>
+</li>
+<li><p>内存 - 进程的存放场所</p>
+</li>
+<li><p>文件 - 程序和数据的最终存放点</p>
+</li>
+</ul>
+<h4 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h4><ul>
+<li><p>操作系统是通过系统调用来为应用程序提高服务的。应用程序通过调用操作系统提供 的API来获得操作系统的服务。</p>
+</li>
+<li><p>编译器对一个程序语句先将库函数扩展为系统调用函数，再继续执行。</p>
+</li>
+<li><p>系统调用的种类</p>
+<ul>
+<li>进程类</li>
+<li>文件类</li>
+<li>设备类</li>
+<li>内存类</li>
+<li>信息维护类</li>
+<li>通信类</li>
+</ul>
+</li>
+<li><p>系统调用的3个阶段</p>
+<ul>
+<li><p>参数准备，将参数放入寄存器或者压入栈</p>
+</li>
+<li><p>调用识别，通过查询系统调用表或者系统调用函数的内存地址</p>
+</li>
+<li><p>调用执行，执行这个内存地址的系统调用代码</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h4><ul>
+<li>系统 API 过于复杂，是给专门的编程人员使用。而这个 Shell(壳) 就像是操作系统之上的一层壳，有固定的命令或图形操作方式给用户使用；用户可以通过这个 Shell 中的命令来调用系统服务，（固定的命令保证了用户不能直接使用用户态的核心服务，而是有界限的只用 Shell 提供的这些，保证了系统安全）。</li>
+<li>一个 Shell 就是一个循环程序，始终在等待用户的输入，当用户输入后程序继续执行并 fork 一个子进程来完成用户的命令任务，父进程等待子进程结束。</li>
+</ul>
+<ul>
+<li><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">op1=>operation: 网状结构，各个功能模块之间错综复杂
+op2=>operation: 层次结构，将用户态和内核态分开，系统服务都在内核态，这增加了从用户态向内核态之间过渡的时间成本
+op3=>operation: 微内核结构，将核心服务留在内核态，其他的系统服务放在用户态。现在主流。
+op1(right)->op2->op3</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书笔记/">读书笔记</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-操作系统_读书笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/05/09/操作系统_读书笔记/" class="article-date">
+      <time datetime="2018-05-09T08:19:35.000Z" itemprop="datePublished">2018-05-09</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/09/操作系统_读书笔记/">操作系统的-1 | 2 章</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h2 id="1，2章"><a href="#1，2章" class="headerlink" title="1，2章"></a>1，2章</h2><h3 id="人造科学"><a href="#人造科学" class="headerlink" title="人造科学"></a>人造科学</h3><p>学习一门学科要用对应的思维模式，也是一种哲学。<br>作者反复强调一种观点：计算机科学不同于自然科学的发现，它是本来不存在的，是人类的发明，是人造的科学，人造的科学带有一定的不确定性，这并不像自然科学那样有着严格的数学意义和严谨的数学推理。既然是人为的科学便有种“差不多”式的学问在里面。对这点的理解可以结合算法的分析来看，算法的复杂的往往只是用它的最高阶来表示，大O记号来表示，这就不考虑那些低阶表达式的影响。在人造科学的学习上，逻辑关系的理解比细节的具体的量化信息更为重要。我们不能说一个程序一定没有Bug，而这个Bug有可能是逻辑的错误，有可能是计算机本身的数据的不精确产生。<br>人造科学的特点：<br>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书笔记/">读书笔记</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/05/09/操作系统_读书笔记/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-初探前端编程的结构" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -270,72 +496,6 @@
       
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web前端/">Web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-操作系统_读书笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/05/07/操作系统_读书笔记/" class="article-date">
-      <time datetime="2018-05-07T14:10:00.000Z" itemprop="datePublished">2018-05-07</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/07/操作系统_读书笔记/">工具类网址收录</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>在这里记录《操作系统》的读书笔记，持续更新。</p>
-<h2 id="1，2章"><a href="#1，2章" class="headerlink" title="1，2章"></a>1，2章</h2><p>操作系统是一种软件，是在硬件与用户软件之间之间的夹层，是对硬件的抽象，让上层应用程序感觉上是对一个对硬件设备驱动，</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Programming/">Programming</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/操作系统/">操作系统</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书笔记/">读书笔记</a></li></ul>
     </div>
 
       
@@ -938,6 +1098,14 @@
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
+
+
+  <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
 
 
   </div>
