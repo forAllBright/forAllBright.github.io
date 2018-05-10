@@ -16,18 +16,18 @@
 
 
 
-<meta name="description" content="Hexo框架有着更全的文档，是更加流行的静态网站搭建框架。在这里记录一下用 Hexo 搭建博客的过程和对遇到问题的解决方法。  i. Hexo 的安装在已经安装 npm 的基础上安装。 1.  安装npm(cnpm)1234# 安装hexo$ npm install hexo-cli g## 因为网络缘故，在国内使用 node.js 的原生工具 npm 直接安装可能无法正常进行，可以采用淘宝前端组">
+<meta name="description" content="2018-05-10 21:25:36 Update:   增加了将文章中图片进行宽度高度设定的功能，加上了边框。1234567891011/*add to make images in article center*/img &amp;#123;   display: block;   width: 550px;   height: auto;   margin: auto;   border: 1p">
 <meta name="keywords" content="Web前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo搭建博客">
-<meta property="og:url" content="https://forallbright.github.io/2018/05/04/Hexo搭建博客/index.html">
+<meta property="og:url" content="https://forallbright.github.io/2018/05/10/Hexo搭建博客/index.html">
 <meta property="og:site_name" content="forAllBright&#39;s Blog">
-<meta property="og:description" content="Hexo框架有着更全的文档，是更加流行的静态网站搭建框架。在这里记录一下用 Hexo 搭建博客的过程和对遇到问题的解决方法。  i. Hexo 的安装在已经安装 npm 的基础上安装。 1.  安装npm(cnpm)1234# 安装hexo$ npm install hexo-cli g## 因为网络缘故，在国内使用 node.js 的原生工具 npm 直接安装可能无法正常进行，可以采用淘宝前端组">
+<meta property="og:description" content="2018-05-10 21:25:36 Update:   增加了将文章中图片进行宽度高度设定的功能，加上了边框。1234567891011/*add to make images in article center*/img &amp;#123;   display: block;   width: 550px;   height: auto;   margin: auto;   border: 1p">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-06T02:44:20.000Z">
+<meta property="og:updated_time" content="2018-05-10T13:43:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建博客">
-<meta name="twitter:description" content="Hexo框架有着更全的文档，是更加流行的静态网站搭建框架。在这里记录一下用 Hexo 搭建博客的过程和对遇到问题的解决方法。  i. Hexo 的安装在已经安装 npm 的基础上安装。 1.  安装npm(cnpm)1234# 安装hexo$ npm install hexo-cli g## 因为网络缘故，在国内使用 node.js 的原生工具 npm 直接安装可能无法正常进行，可以采用淘宝前端组">
+<meta name="twitter:description" content="2018-05-10 21:25:36 Update:   增加了将文章中图片进行宽度高度设定的功能，加上了边框。1234567891011/*add to make images in article center*/img &amp;#123;   display: block;   width: 550px;   height: auto;   margin: auto;   border: 1p">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -213,8 +213,8 @@
       <div class="body-wrap"><article id="post-Hexo搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/05/04/Hexo搭建博客/" class="article-date">
-      <time datetime="2018-05-04T08:31:01.000Z" itemprop="datePublished">2018-05-04</time>
+      <a href="/2018/05/10/Hexo搭建博客/" class="article-date">
+      <time datetime="2018-05-10T13:25:36.000Z" itemprop="datePublished">2018-05-10</time>
 </a>
 
 
@@ -254,11 +254,23 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Hexo框架有着更全的文档，是更加流行的静态网站搭建框架。在这里记录一下用 Hexo 搭建博客的过程和对遇到问题的解决方法。</p>
+        <p><span style="color:red"><em> 2018-05-10 21:25:36 Update: </em></span></p>
+<ul>
+<li>增加了将文章中图片进行宽度高度设定的功能，加上了边框。<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*add to make images in article center*/</span></span><br><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">   <span class="attribute">display</span>: block;</span><br><span class="line">   <span class="attribute">width</span>: <span class="number">550px</span>;</span><br><span class="line">   <span class="attribute">height</span>: auto;</span><br><span class="line">   <span class="attribute">margin</span>: auto;</span><br><span class="line">   <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#88acdb</span>;</span><br><span class="line">   <span class="attribute">border-radius</span>: <span class="number">2%</span>;</span><br><span class="line">   <span class="attribute">margin-top</span>: <span class="number">15px</span>;</span><br><span class="line">   <span class="attribute">margin-bottom</span>: <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li>尝试添加阅读百分比功能</li>
+</ul>
+<p>在 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">next</a> 中移植源码，已经移植了 <code>scrollpercent</code> 相关的css/swig代码，但只能显示图标并不能实现跳转到顶部和显示百分比。 通过跑 next 主题发现，应该还需要 <code>scrollspy</code> 这个代码。</p>
+<hr>
+<p><span style="color:red"><em> 2018-05-04 16:31:01 Update: </em></span></p>
+<p>Hexo框架有着更全的文档，是更加流行的静态网站搭建框架。在这里记录一下用 Hexo 搭建博客的过程和对遇到问题的解决方法。</p>
 <hr>
 <h2 id="i-Hexo-的安装"><a href="#i-Hexo-的安装" class="headerlink" title="i. Hexo 的安装"></a>i. Hexo 的安装</h2><p>在已经安装 <code>npm</code> 的基础上安装。</p>
 <h3 id="1-安装npm-cnpm"><a href="#1-安装npm-cnpm" class="headerlink" title="1.  安装npm(cnpm)"></a>1.  安装npm(cnpm)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装hexo</span></span><br><span class="line">$ npm install hexo-cli g</span><br><span class="line"><span class="comment">## 因为网络缘故，在国内使用 node.js 的原生工具 npm 直接安装可能无法正常进行，可以采用淘宝前端组的国内镜像安装cnpm，而后以下步骤可以使用其定制的 cnmp 工具代替 npm。</span></span><br><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
+<!--more-->
 <h3 id="2-初始化博客文件夹-创建博客文件夹"><a href="#2-初始化博客文件夹-创建博客文件夹" class="headerlink" title="2. 初始化博客文件夹,创建博客文件夹"></a>2. 初始化博客文件夹,创建博客文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog`</span><br></pre></td></tr></table></figure>
 <p>这时会显示如下，给出需要手动安装依赖的警示。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">INFO  Cloning hexo-starter to ~/Project/for_Blog_Test/hexoBlog/myblog</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">ERROR: install is not COMMAND nor fully qualified CLASSNAME.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">WARN  Failed to install dependencies. Please run <span class="string">'npm install'</span> manually!</span><br></pre></td></tr></table></figure>
@@ -372,13 +384,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/05/04/Hexo搭建博客/">Hexo搭建博客</a></p>
+        <p><span>本文标题:</span><a href="/2018/05/10/Hexo搭建博客/">Hexo搭建博客</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">forAllBright</a></p>
-        <p><span>发布时间:</span>2018-05-04, 16:31:01</p>
-        <p><span>最后更新:</span>2018-05-06, 10:44:20</p>
+        <p><span>发布时间:</span>2018-05-10, 21:25:36</p>
+        <p><span>最后更新:</span>2018-05-10, 21:43:43</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/05/04/Hexo搭建博客/" title="Hexo搭建博客">https://forallbright.github.io/2018/05/04/Hexo搭建博客/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/04/Hexo搭建博客/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/05/10/Hexo搭建博客/" title="Hexo搭建博客">https://forallbright.github.io/2018/05/10/Hexo搭建博客/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/10/Hexo搭建博客/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -390,16 +402,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/05/05/配置SublimeText3插件/">
-                    配置 SublimeText3 插件
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/04/27/Hugo框架搭建博客/">
-                    Hugo框架搭建博客
+                <a href="/2018/05/09/操作系统_读书笔记_3_4/">
+                    操作系统的-3 | 4 章
                 </a>
             </div>
         
@@ -467,21 +473,19 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/05/05/配置SublimeText3插件/" title="上一篇: 配置 SublimeText3 插件">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/04/27/Hugo框架搭建博客/" title="下一篇: Hugo框架搭建博客">
+            <a href="/2018/05/09/操作系统_读书笔记_3_4/" title="下一篇: 操作系统的-3 | 4 章">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/操作系统_读书笔记_3_4/">操作系统的-3 | 4 章</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/操作系统_读书笔记/">操作系统的-1 | 2 章</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/初探前端编程的结构/">初探前端编程的结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/07/元启发式算法/">元启发式算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/07/Google收录博客/">Google收录博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/工具类网址收录/">工具类网址收录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/MacOS 常用命令收录/">Mac 常用命令收录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/05/配置SublimeText3插件/">配置 SublimeText3 插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/04/Hexo搭建博客/">Hexo搭建博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/27/Hugo框架搭建博客/">Hugo框架搭建博客</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/05/10/Hexo搭建博客/">Hexo搭建博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/操作系统_读书笔记_3_4/">操作系统的-3 | 4 章</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/09/操作系统_读书笔记_1_2/">操作系统的-1 | 2 章</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/初探前端编程的结构/">初探前端编程的结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/07/元启发式算法/">元启发式算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/07/Google收录博客/">Google收录博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/工具类网址收录/">工具类网址收录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/06/MacOS 常用命令收录/">Mac 常用命令收录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/05/配置SublimeText3插件/">配置 SublimeText3 插件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/04/27/Hugo框架搭建博客/">Hugo框架搭建博客</a></li></ul>
 
 
 
@@ -552,9 +556,9 @@
 
 <div class="scroll" id="scroll">
     <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <!-- <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a> -->
-    <a href="#footer" title="查看评论"><i class="fa fa-comments-o"></i></a>
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <!-- <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a> -->
+    <!-- <a href="#footer" title="查看评论"><i class="fa fa-comments-o"></i></a> -->
 </div>
 
 <script>
