@@ -16,18 +16,35 @@
 
 
 
-<meta name="description" content="在捣鼓博客主题源码中学习！  —2018-05-08 22:08:00—  今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。   在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。   尝试将 Yelee 主题的本地搜索源码移植到 Lan">
-<meta name="keywords" content="Web前端,随笔">
+<meta name="description" content="2018-05-12 09:58:35 Update:  采用多种搜索方式的组合，提高搜索效率。（面向 Google 编程？emmm…） 搜索遵照的原则 搜索的”句法”范围从宽泛到具体这样往往会包含到你需要的所有信息, 一开始的具体搜索并不是个好习惯, 因为你想要的信息网页上的提供者可能不是按照你需要的那样描述的, 一开始键入 关键词 可以覆盖的更多的信息. 尝试用另一种表述用一种单一的表述来搜">
+<meta name="keywords" content="软件工具">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初探前端编程的结构">
-<meta property="og:url" content="https://forallbright.github.io/2018/05/08/初探前端编程的结构/index.html">
+<meta property="og:title" content="Google Search Tricks">
+<meta property="og:url" content="https://forallbright.github.io/2018/05/12/Google Search Tricks/index.html">
 <meta property="og:site_name" content="forAllBright&#39;s Blog">
-<meta property="og:description" content="在捣鼓博客主题源码中学习！  —2018-05-08 22:08:00—  今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。   在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。   尝试将 Yelee 主题的本地搜索源码移植到 Lan">
+<meta property="og:description" content="2018-05-12 09:58:35 Update:  采用多种搜索方式的组合，提高搜索效率。（面向 Google 编程？emmm…） 搜索遵照的原则 搜索的”句法”范围从宽泛到具体这样往往会包含到你需要的所有信息, 一开始的具体搜索并不是个好习惯, 因为你想要的信息网页上的提供者可能不是按照你需要的那样描述的, 一开始键入 关键词 可以覆盖的更多的信息. 尝试用另一种表述用一种单一的表述来搜">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-08T14:22:07.000Z">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1fr8e4tgxl5j30z00ledm2.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fr8e6gpzkpj311y0ucwof.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fr8e78wvjgj30xo0isjw8.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1fr8e7r8m7gj310c0vok03.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1fr8e8m7z5mj30xo0ladlr.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fr8e9w8w52j30y80neti0.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fr8eagp2ntj30xu0mc7aq.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79ly1fr8eb5epssj310o0ne79e.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79ly1fr8ebtobsmj310i0nmted.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1fr8ed65eq6j30y20i4doz.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fr8edsc3wzj30xm0kqwk4.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fr8eecywwrj30ye0g4dk3.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fr8ef6v8pwj30yk0m4qa6.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fr8eg9luhqj310a13q45d.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79ly1fr8ehepsjlj30ye0c4gpz.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fr8ei286vpj3178146ags.jpg">
+<meta property="og:updated_time" content="2018-05-12T03:39:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初探前端编程的结构">
-<meta name="twitter:description" content="在捣鼓博客主题源码中学习！  —2018-05-08 22:08:00—  今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。   在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。   尝试将 Yelee 主题的本地搜索源码移植到 Lan">
+<meta name="twitter:title" content="Google Search Tricks">
+<meta name="twitter:description" content="2018-05-12 09:58:35 Update:  采用多种搜索方式的组合，提高搜索效率。（面向 Google 编程？emmm…） 搜索遵照的原则 搜索的”句法”范围从宽泛到具体这样往往会包含到你需要的所有信息, 一开始的具体搜索并不是个好习惯, 因为你想要的信息网页上的提供者可能不是按照你需要的那样描述的, 一开始键入 关键词 可以覆盖的更多的信息. 尝试用另一种表述用一种单一的表述来搜">
+<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/006tNc79gy1fr8e4tgxl5j30z00ledm2.jpg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -57,7 +74,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>初探前端编程的结构 | forAllBright&#39;s Blog</title>
+<title>Google Search Tricks | forAllBright&#39;s Blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -210,11 +227,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-初探前端编程的结构" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Google Search Tricks" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/05/08/初探前端编程的结构/" class="article-date">
-      <time datetime="2018-05-08T14:08:00.000Z" itemprop="datePublished">2018-05-08</time>
+      <a href="/2018/05/12/Google Search Tricks/" class="article-date">
+      <time datetime="2018-05-12T01:58:35.000Z" itemprop="datePublished">2018-05-12</time>
 </a>
 
 
@@ -229,7 +246,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      初探前端编程的结构
+      Google Search Tricks
     </h1>
   
 
@@ -238,13 +255,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Programming/">Programming</a>
+    <a class="article-category-link" href="/categories/LifeHack/">LifeHack</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web前端/">Web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/软件工具/">软件工具</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -254,19 +271,58 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>在捣鼓博客主题源码中学习！</p>
-<blockquote>
-<p>—2018-05-08 22:08:00—</p>
-</blockquote>
-<p>今晚又研究了Hexo 框架前端结构，尝试通过给 Hexo Landscape-plus 主题加上本地搜索的功能。  </p>
-<p>在主题源码中发现 ejs 和 js 的层层调用关系，并将 css 与 js 联系起来，用 css 来修饰 js 中的元素（id，form，div）。  </p>
-<p>尝试将 Yelee 主题的本地搜索源码移植到 Landscape-plus 主题上代替其自带的百度搜索的功能，主要将其中的对搜索框的修饰代码和搜索动作搜索结果的呈现这些 js 代码嵌入进去。  </p>
-<p>其中疑惑的几点：</p>
-<ul>
-<li>pc.js 调用 <code>search.js</code> 产生的新的 <code>search</code> 函数没有被其他代码直接调用，而是用了一个其中的 <code>resertSearch</code> 的函数，暂时理解为调用 <code>resertSearch</code> 函数会自动加载前面的部分，实现了调用。有待确认。</li>
-<li>最后编译本地调试后发现搜索框存在，但是并不能完成搜索的功能，这让我很不解，可能还有部分代码移植的有问题。</li>
+        <p><span style="color:red"><em> 2018-05-12 09:58:35 Update: </em></span></p>
+<p>采用多种搜索方式的组合，提高搜索效率。（面向 Google 编程？emmm…）</p>
+<h3 id="搜索遵照的原则"><a href="#搜索遵照的原则" class="headerlink" title="搜索遵照的原则"></a>搜索遵照的原则</h3><ul>
+<li>搜索的”句法”范围从宽泛到具体<br>这样往往会包含到你需要的所有信息, 一开始的具体搜索并不是个好习惯, 因为你想要的信息网页上的提供者可能不是按照你需要的那样描述的, 一开始键入 <strong>关键词</strong> 可以覆盖的更多的信息.</li>
+<li>尝试用另一种表述<br>用一种单一的表述来搜索可能不能找到你需要的信息, 尝试换一种表述来表达同样的意思.<a id="more"></a></li>
+<li>使用标签<br>当你明确搜索的是图片或者视频，就选择相应的标签。</li>
 </ul>
-<p>暂时还是先用 Yelee 的主题写博客，以上工作的代码已经备份到 coding.net 。</p>
+<h3 id="常用的搜索技巧"><a href="#常用的搜索技巧" class="headerlink" title="常用的搜索技巧"></a>常用的搜索技巧</h3><ul>
+<li>用加号减号<ul>
+<li>加号，<code>+</code> 意味着前后单词或句子必须同时出现在搜索结果中。如：<code>Syntax +Python3</code> 注意：<code>+</code> 前面有空格，后面没有空格，必须严格遵照搜索语法，否则是起不到效果的。<br><img src="https://ws2.sinaimg.cn/large/006tNc79gy1fr8e4tgxl5j30z00ledm2.jpg" alt=""></li>
+<li>减号，<code>-</code> 意味着前面的搜索结果中必然不能包含后面的单词或句子。如： <code>Programming -Windows</code> 注意：同样的，<code>-</code> 前面有空格后面没有空格。</li>
+</ul>
+</li>
+<li>使用双引号来限定精确搜索</li>
+</ul>
+<p>用 <code>&quot;Python syntax&quot;</code> 来表示搜索结果中必须包含 “Python syntax” 这样的短语，不能是其他含有 Python 或者 syntax 的搜索结果。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fr8e6gpzkpj311y0ucwof.jpg" alt=""></p>
+<ul>
+<li>使用 <code>OR</code> 搜索 / 使用 <code>AND</code> 搜索<ul>
+<li><code>Python OR Java</code> 结果中出现 Java 或者 Python，但不同时出现。<br><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fr8e78wvjgj30xo0isjw8.jpg" alt=""></li>
+<li><code>Python AND Java</code>，结果中同时包含Java 和 Python<br><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fr8e7r8m7gj310c0vok03.jpg" alt=""></li>
+</ul>
+</li>
+<li>限定搜索的网站<br>使用冒号 <code>:</code> 来限定搜索的网站，如：<code>python site:github.com</code> 表示在 github 中搜索 python 相关的信息。<ul>
+<li>注意若限定的网址前缀不是<code>www</code>，必须将网址补全。</li>
+<li><code>site:</code> 冒号后面不能有空格。<br><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fr8e8m7z5mj30xo0ladlr.jpg" alt=""></li>
+</ul>
+</li>
+<li>使用通配符模糊查找<br><code>*</code> 表示任意单词或句子。<code>“Come * right now * me”</code> 将包含各种视 <code>*</code> 为任意单词/句子的结果。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fr8e9w8w52j30y80neti0.jpg" alt=""></li>
+<li>搜索结果是包含某种特定的文件类型<br><code>&quot;python cookbook&quot; filetype:pdf</code>  搜索结果全是 pdf 文件类型,且包含 python cookbook 这个短语<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fr8eagp2ntj30xu0mc7aq.jpg" alt=""></li>
+</ul>
+<h3 id="限定在标题-文章中查找"><a href="#限定在标题-文章中查找" class="headerlink" title="限定在标题/文章中查找"></a>限定在标题/文章中查找</h3><ul>
+<li>需要的关心的在网页 <strong>标题</strong>中，不管其他地方如网页文章内容中<ul>
+<li><code>allintitle:android AND iOS</code> 显示的搜索结果中的标题中必然都同时包含 andriod 和 IOS , 不区分大小写。<br><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fr8eb5epssj310o0ne79e.jpg" alt=""></li>
+<li>相对弱化精确度的是：<code>intitle:android AND IOS</code> 结果并不是精确的包含冒号后的句法，文章中可以有, 这是相对更广泛的搜索。</li>
+</ul>
+</li>
+<li>需要的关心的信息在网页文章内容中，不管其他地方<ul>
+<li><code>allintext:android AND iOS</code> 显示的搜索结果只在文章中含有,标题中没有<br><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fr8ebtobsmj310i0nmted.jpg" alt=""></li>
+<li><code>intext:android AND iOS</code> 显示网页文章中包含冒号后句法的搜索结果,标题中可以有, 搜索结果相对更广泛.</li>
+</ul>
+</li>
+<li>与常用查找的组合<br><code>&quot;neil diamond&quot; intext:&quot;red sox&quot;</code> 意思是: 在我们要搜索的关于neil diamond 结果中, 同时在文章内容中要包含 red sox 这个短语.<br><code>python learning intitle:advice</code> 意思是: 在我们要搜索的关于 python learning 结果中,同时要在文章标题中包含 advice 这个词<br><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fr8ed65eq6j30y20i4doz.jpg" alt=""></li>
+</ul>
+<h3 id="与网址相关的查找"><a href="#与网址相关的查找" class="headerlink" title="与网址相关的查找"></a>与网址相关的查找</h3><ul>
+<li>需要的关心的信息在网址中<br><code>inurl:photoshop</code> 搜索结果中，网页的网址都会包含冒号后的句法。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fr8edsc3wzj30xm0kqwk4.jpg" alt=""></li>
+<li>搜索 引用了某个特点网址 所有网页<br><code>link:www.baidu.com</code> 搜索结果中都是在网页中有引用 <code>www.baidu.com</code> 这个链接。</li>
+<li>查找 和某个网站相似 的网站<br><code>related:amazon.com</code> 列出所有的在线销售网站<br><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fr8eecywwrj30ye0g4dk3.jpg" alt=""></li>
+</ul>
+<h3 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h3><ul>
+<li>使用数字的范围<br><code>40..50 +&quot;python code&quot;</code> 显示的结果中包含 40至50的数字 和 python code 这个短语.<br><code>president 1920..1950</code> 显示在这个时间段内的 关于president 的信息，会用加粗来表示<br><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fr8ef6v8pwj30yk0m4qa6.jpg" alt=""></li>
+<li>查找单词的定义<br><code>Define:fancy</code> 将给出fancy 这个单词的意思, 默认是英文定义<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fr8eg9luhqj310a13q45d.jpg" alt=""><br><code>chinese define:fancy</code> 给出中文意思<br><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fr8ehepsjlj30ye0c4gpz.jpg" alt=""><br><code>cambridge chinese: fancy</code> 在第一条给出剑桥词典意思, 很好的词典.<br><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fr8ei286vpj3178146ags.jpg" alt=""></li>
+</ul>
 
       
     </div>
@@ -275,13 +331,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2018/05/08/初探前端编程的结构/">初探前端编程的结构</a></p>
+        <p><span>本文标题:</span><a href="/2018/05/12/Google Search Tricks/">Google Search Tricks</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">forAllBright</a></p>
-        <p><span>发布时间:</span>2018-05-08, 22:08:00</p>
-        <p><span>最后更新:</span>2018-05-08, 22:22:07</p>
+        <p><span>发布时间:</span>2018-05-12, 09:58:35</p>
+        <p><span>最后更新:</span>2018-05-12, 11:39:47</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2018/05/08/初探前端编程的结构/" title="初探前端编程的结构">https://forallbright.github.io/2018/05/08/初探前端编程的结构/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/08/初探前端编程的结构/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/05/12/Google Search Tricks/" title="Google Search Tricks">https://forallbright.github.io/2018/05/12/Google Search Tricks/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/12/Google Search Tricks/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -293,16 +349,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2018/05/09/操作系统_读书笔记_1_2/">
-                    操作系统的-1 | 2 章
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/05/07/元启发式算法/">
-                    元启发式算法
+                <a href="/2018/05/11/Vim 配置与使用/">
+                    Vim 配置与使用
                 </a>
             </div>
         
@@ -314,7 +364,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#搜索遵照的原则"><span class="toc-text">搜索遵照的原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用的搜索技巧"><span class="toc-text">常用的搜索技巧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#限定在标题-文章中查找"><span class="toc-text">限定在标题/文章中查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#与网址相关的查找"><span class="toc-text">与网址相关的查找</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他技巧"><span class="toc-text">其他技巧</span></a></li></ol>
         
     </div>
     <style>
@@ -370,15 +420,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2018/05/09/操作系统_读书笔记_1_2/" title="上一篇: 操作系统的-1 | 2 章">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/05/07/元启发式算法/" title="下一篇: 元启发式算法">
+            <a href="/2018/05/11/Vim 配置与使用/" title="下一篇: Vim 配置与使用">
                 <i class="fa fa-angle-right"></i>
             </a>
         

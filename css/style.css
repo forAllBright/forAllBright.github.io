@@ -1550,11 +1550,8 @@ body .ui-tooltip {
   font-size: 28px;
   font-family: San Francisco, Helvetica, Bookman, Palatino, "PingFang SC", "Microsoft YaHei", Courier, Tahoma, Arial;
 }
-.article-entry h2:hover {
-  color: #88acdb;
-}
-.article-entry h2::before,
-.article-entry h2::after {
+.article-entry::before,
+.article-entry::after {
   content: " —— ";
   font-family: Arial;
 }
@@ -1762,9 +1759,6 @@ body .ui-tooltip {
 #intro::before,
 #intro::after {
   content: none;
-}
-li:hover {
-  background: rgba(158,188,226,0.21);
 }
 .article-entry > ol:last-child > li:nth-child(2n) {
   background: rgba(158,188,226,0.12);
