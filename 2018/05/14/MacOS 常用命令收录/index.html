@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="forAllBright&#39;s Blog">
 <meta property="og:description" content="持续更新！ 2018-05-14 09:47:59 Update:  增加设置 Dock 自动隐藏唤起时间设置 2018-05-13 20:09:32 Update:  增加关闭动画命令 文件类目录相关$ tree 作用：输出目录树层结构  输出目录树 n 层 1$ tree -L n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-14T01:50:22.000Z">
+<meta property="og:updated_time" content="2018-05-14T05:16:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac 常用命令收录">
 <meta name="twitter:description" content="持续更新！ 2018-05-14 09:47:59 Update:  增加设置 Dock 自动隐藏唤起时间设置 2018-05-13 20:09:32 Update:  增加关闭动画命令 文件类目录相关$ tree 作用：输出目录树层结构  输出目录树 n 层 1$ tree -L n">
@@ -278,7 +278,7 @@
 <p>打开:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults delete com.apple.dock springboard-show-duration defaults delete com.apple.dock springboard-hide-duration;killall Dock</span><br></pre></td></tr></table></figure></p>
 <h4 id="关闭-Dock-栏动画"><a href="#关闭-Dock-栏动画" class="headerlink" title="关闭 Dock 栏动画"></a>关闭 Dock 栏动画</h4><p>关闭:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dock autohide-time-moidifier -int 0;killall Dock</span><br></pre></td></tr></table></figure></p>
 <p>打开:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dock autohide-time-moidifier -int 0;killall Dock</span><br></pre></td></tr></table></figure></p>
-<h3 id="设置-Dock-自动隐藏唤起的延迟"><a href="#设置-Dock-自动隐藏唤起的延迟" class="headerlink" title="设置 Dock 自动隐藏唤起的延迟"></a>设置 Dock 自动隐藏唤起的延迟</h3><p><a href="https://www.quora.com/How-can-I-completely-hide-or-remove-the-Dock-in-Mac-OS-X-Yosemite" target="_blank" rel="noopener"></a> 说不建议将 Dock 彻底的关掉,因为 Dock 的运行服务和系统的桌面背景等相关功能有关, 更好的方式是将 Dock 设置为自动隐藏,唤起时间加长这样就不会轻易触发.</p>
+<h3 id="设置-Dock-自动隐藏唤起的延迟"><a href="#设置-Dock-自动隐藏唤起的延迟" class="headerlink" title="设置 Dock 自动隐藏唤起的延迟"></a>设置 Dock 自动隐藏唤起的延迟</h3><p><a href="https://www.quora.com/How-can-I-completely-hide-or-remove-the-Dock-in-Mac-OS-X-Yosemite" target="_blank" rel="noopener">https://www.quora.com/How-can-I-completely-hide-or-remove-the-Dock-in-Mac-OS-X-Yosemite</a> 说不建议将 Dock 彻底的关掉,因为 Dock 的运行服务和系统的桌面背景等相关功能有关, 更好的方式是将 Dock 设置为自动隐藏,唤起时间加长这样就不会轻易触发.</p>
 <p><code>-float 5</code> 是唤起的延迟时间<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.Dock autohide-delay -<span class="built_in">float</span> 5 &amp;&amp; killall Dock</span><br></pre></td></tr></table></figure></p>
 <p>恢复默认的自动唤起:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults delete com.apple.Dock autohide-delay</span><br></pre></td></tr></table></figure></p>
 
@@ -292,7 +292,7 @@
         <p><span>本文标题:</span><a href="/2018/05/14/MacOS 常用命令收录/">Mac 常用命令收录</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">forAllBright</a></p>
         <p><span>发布时间:</span>2018-05-14, 09:50:20</p>
-        <p><span>最后更新:</span>2018-05-14, 09:50:22</p>
+        <p><span>最后更新:</span>2018-05-14, 13:16:34</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/05/14/MacOS 常用命令收录/" title="Mac 常用命令收录">https://forallbright.github.io/2018/05/14/MacOS 常用命令收录/</a>
             <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/14/MacOS 常用命令收录/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
