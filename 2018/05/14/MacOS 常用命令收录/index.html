@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="forAllBright&#39;s Blog">
 <meta property="og:description" content="持续更新！ 2018-05-14 09:47:59 Update:  增加设置 Dock 自动隐藏唤起时间设置 2018-05-13 20:09:32 Update:  增加关闭动画命令 文件类目录相关$ tree 作用：输出目录树层结构  输出目录树 n 层 1$ tree -L n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-14T05:16:34.000Z">
+<meta property="og:updated_time" content="2018-05-14T09:37:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac 常用命令收录">
 <meta name="twitter:description" content="持续更新！ 2018-05-14 09:47:59 Update:  增加设置 Dock 自动隐藏唤起时间设置 2018-05-13 20:09:32 Update:  增加关闭动画命令 文件类目录相关$ tree 作用：输出目录树层结构  输出目录树 n 层 1$ tree -L n">
@@ -281,6 +281,9 @@
 <h3 id="设置-Dock-自动隐藏唤起的延迟"><a href="#设置-Dock-自动隐藏唤起的延迟" class="headerlink" title="设置 Dock 自动隐藏唤起的延迟"></a>设置 Dock 自动隐藏唤起的延迟</h3><p><a href="https://www.quora.com/How-can-I-completely-hide-or-remove-the-Dock-in-Mac-OS-X-Yosemite" target="_blank" rel="noopener">https://www.quora.com/How-can-I-completely-hide-or-remove-the-Dock-in-Mac-OS-X-Yosemite</a> 说不建议将 Dock 彻底的关掉,因为 Dock 的运行服务和系统的桌面背景等相关功能有关, 更好的方式是将 Dock 设置为自动隐藏,唤起时间加长这样就不会轻易触发.</p>
 <p><code>-float 5</code> 是唤起的延迟时间<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.Dock autohide-delay -<span class="built_in">float</span> 5 &amp;&amp; killall Dock</span><br></pre></td></tr></table></figure></p>
 <p>恢复默认的自动唤起:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults delete com.apple.Dock autohide-delay</span><br></pre></td></tr></table></figure></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><blockquote>
+<p><a href="https://github.com/herrbischoff/awesome-macos-command-line" target="_blank" rel="noopener">https://github.com/herrbischoff/awesome-macos-command-line</a><br><a href="https://www.infoworld.com/article/2614879/mac-os-x/mac-os-x-top-20-os-x-command-line-secrets-for-power-users.html?page=6" target="_blank" rel="noopener">https://www.infoworld.com/article/2614879/mac-os-x/mac-os-x-top-20-os-x-command-line-secrets-for-power-users.html?page=6</a><br><a href="https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_cmds.html" target="_blank" rel="noopener">https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_cmds.html</a></p>
+</blockquote>
 
       
     </div>
@@ -292,7 +295,7 @@
         <p><span>本文标题:</span><a href="/2018/05/14/MacOS 常用命令收录/">Mac 常用命令收录</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">forAllBright</a></p>
         <p><span>发布时间:</span>2018-05-14, 09:50:20</p>
-        <p><span>最后更新:</span>2018-05-14, 13:16:34</p>
+        <p><span>最后更新:</span>2018-05-14, 17:37:17</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/05/14/MacOS 常用命令收录/" title="Mac 常用命令收录">https://forallbright.github.io/2018/05/14/MacOS 常用命令收录/</a>
             <span class="copy-path" data-clipboard-text="原文: https://forallbright.github.io/2018/05/14/MacOS 常用命令收录/　　作者: forAllBright" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -322,7 +325,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文件类"><span class="toc-text">文件类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目录相关"><span class="toc-text">目录相关</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#tree"><span class="toc-text">$ tree</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#系统设置类"><span class="toc-text">系统设置类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关闭系统动画效果"><span class="toc-text">关闭系统动画效果</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭-MissionControl-动画"><span class="toc-text">关闭 MissionControl 动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭窗口和对话框动画"><span class="toc-text">关闭窗口和对话框动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭预览动画"><span class="toc-text">关闭预览动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭文件保存-打印的动画"><span class="toc-text">关闭文件保存/打印的动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭-LaunchPad-动画"><span class="toc-text">关闭 LaunchPad 动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭-Dock-栏动画"><span class="toc-text">关闭 Dock 栏动画</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置-Dock-自动隐藏唤起的延迟"><span class="toc-text">设置 Dock 自动隐藏唤起的延迟</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文件类"><span class="toc-text">文件类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目录相关"><span class="toc-text">目录相关</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#tree"><span class="toc-text">$ tree</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#系统设置类"><span class="toc-text">系统设置类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#关闭系统动画效果"><span class="toc-text">关闭系统动画效果</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭-MissionControl-动画"><span class="toc-text">关闭 MissionControl 动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭窗口和对话框动画"><span class="toc-text">关闭窗口和对话框动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭预览动画"><span class="toc-text">关闭预览动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭文件保存-打印的动画"><span class="toc-text">关闭文件保存/打印的动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭-LaunchPad-动画"><span class="toc-text">关闭 LaunchPad 动画</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关闭-Dock-栏动画"><span class="toc-text">关闭 Dock 栏动画</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置-Dock-自动隐藏唤起的延迟"><span class="toc-text">设置 Dock 自动隐藏唤起的延迟</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考"><span class="toc-text">参考</span></a></li></ol></li></ol>
         
     </div>
     <style>
