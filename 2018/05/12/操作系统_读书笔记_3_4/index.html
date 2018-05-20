@@ -170,8 +170,10 @@
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-09-130416.png">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-11-161534.png">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fr8l0k4dnej30ki0dydiz.jpg">
+<meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-115827.png">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79ly1fr8l1kmbz7j30sa0hmq6l.jpg">
-<meta property="og:updated_time" content="2018-05-19T12:16:30.000Z">
+<meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-115532.png">
+<meta property="og:updated_time" content="2018-05-20T12:14:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统-3 | 4 章">
 <meta name="twitter:description" content="操作系统的基本概念“差不多”精神操作系统是人造科学，其中蕴含着“差不多”的思想，学习操作系统不可吹毛求疵。 硬件知识概念上的结构： 一条总线，各种硬件挂在这根总线上；而每个硬件都是通过对应的控制器连接到总线与 CPU 通信。">
@@ -451,7 +453,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-05-19 20:16:30" itemprop="dateModified" datetime="2018-05-19T20:16:30+08:00">2018-05-19</time>
+                <time title="Modified: 2018-05-20 20:14:39" itemprop="dateModified" datetime="2018-05-20T20:14:39+08:00">2018-05-20</time>
               
             
           </span>
@@ -489,7 +491,7 @@
                      <i class="fa fa-line-chart"></i>
                    </span>
                    <span class="post-meta-item-text">Wordcount:</span>
-                   <span class="post-count">2,230(字)</span>
+                   <span class="post-count">2,274(字)</span>
            </span>
 
             <span class="post-time">
@@ -623,16 +625,27 @@
 </ul>
 <p><strong>特别的</strong> : </p>
 <ul>
-<li>不存在 阻塞-&gt; 执行 这个过程<br>因为阻塞到执行中间必须经过<code>就绪</code>状态,  这是实际上可以操作的,但是阻塞在未进入就绪状态时由被 CPU 选择执行还是阻塞状态,这是没有意义的.</li>
-<li>不存在 就绪 - &gt; 阻塞<br>因为一个处于阻塞状态下的进程, 等待它的下一步操作必然是 CPU 来执行它,只有再执行后才会遇到 I/O 操作,进入到<code>阻塞</code>状态.  这是逻辑上行不通的.<br><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fr8l0k4dnej30ki0dydiz.jpg" alt=""></li>
+<li><p>不存在 阻塞-&gt; 执行 这个过程<br>因为阻塞到执行中间必须经过<code>就绪</code>状态,  这是实际上可以操作的,但是阻塞在未进入就绪状态时由被 CPU 选择执行还是阻塞状态,这是没有意义的.</p>
+</li>
+<li><p>不存在 就绪 - &gt; 阻塞<br>因为一个处于阻塞状态下的进程, 等待它的下一步操作必然是 CPU 来执行它,只有再执行后才会遇到 I/O 操作,进入到<code>阻塞</code>状态.  这是逻辑上行不通的.<br><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fr8l0k4dnej30ki0dydiz.jpg" alt=""></p>
+</li>
+<li><p>一个进程的生命周期</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-115827.png" alt=""></p>
+</li>
 </ul>
 <h3 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h3><ul>
-<li>维护进程记录<br>使用<code>进程表</code>,其中包括每个进程使用的<code>寄存器,程序计数器,状态字,栈指针,优先级,进程的 ID,创建时间,使用 CPU 时间</code>,等信息. 有些进程处于用户态,但进程表都在内核态.<br><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fr8l1kmbz7j30sa0hmq6l.jpg" alt=""></li>
-<li>进程在同一个时间只能干一件事情, 公平与效率,如何设置优先级都是总要的.</li>
-<li>线程的引入将会解决 同一时间只能做一件事的问题 和 整个进程都会被阻塞的问题(意味着进程中不宜懒于I/O 的部分也不能被执行推进,让整个进程的每一部分都停滞)<br><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">op1=>operation: 网状结构，各个功能模块之间错综复杂
+<li><p>维护进程记录<br>使用<code>进程表</code>,其中包括每个进程使用的<code>寄存器,程序计数器,状态字,栈指针,优先级,进程的 ID,创建时间,使用 CPU 时间</code>,等信息. 有些进程处于用户态,但进程表都在内核态.<br><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fr8l1kmbz7j30sa0hmq6l.jpg" alt=""></p>
+</li>
+<li><p>进程控制块，每个进程都有一个进程控制块，可以看做各个进程控制块构成了进程表。</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-115532.png" alt="进程控制块，涵盖一个进程的所有信息"></p>
+</li>
+<li><p>进程在同一个时间只能干一件事情, 公平与效率,如何设置优先级都是总要的.</p>
+</li>
+<li><p>线程的引入将会解决 同一时间只能做一件事的问题 和 整个进程都会被阻塞的问题(意味着进程中不宜懒于I/O 的部分也不能被执行推进,让整个进程的每一部分都停滞)<br><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">op1=>operation: 网状结构，各个功能模块之间错综复杂
 op2=>operation: 层次结构，将用户态和内核态分开，系统服务都在内核态，这增加了从用户态向内核态之间过渡的时间成本
 op3=>operation: 微内核结构，将核心服务留在内核态，其他的系统服务放在用户态。现在主流。
-op1->op2->op3</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></li>
+op1->op2->op3</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
+</li>
 </ul>
 
       
