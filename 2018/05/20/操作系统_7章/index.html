@@ -170,7 +170,7 @@
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-123216.png">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-123401.png">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-123554.png">
-<meta property="og:updated_time" content="2018-05-20T13:47:46.000Z">
+<meta property="og:updated_time" content="2018-05-20T15:47:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统-7章">
 <meta name="twitter:description" content="1. 线程的原理1.1 线程的起源现在意义上的线程是轻量级的进程，是进程中指令执行路径的描述，是多个寄存器等变量条件就绪等待 CPU 选择执行的状态，它包含着私有的程序计数器等状态来确定指令的执行顺序。线程是 CPU 利用的最小单元。 通常，线程和并发联系紧密，在单处理器环境下，多个线程只能并发。具体的，将一个进程切分为多个代码段，每个代码段看做一个线程，这多个线程轮流的使用 CPU，并发的执行。">
@@ -433,7 +433,7 @@
                 
               
 
-              <time title="Created: 2018-05-20 21:47:43 / Modified: 21:47:46" itemprop="dateCreated datePublished" datetime="2018-05-20T21:47:43+08:00">2018-05-20</time>
+              <time title="Created: 2018-05-20 21:47:43 / Modified: 23:47:45" itemprop="dateCreated datePublished" datetime="2018-05-20T21:47:43+08:00">2018-05-20</time>
             
 
             
@@ -476,7 +476,7 @@
                      <i class="fa fa-line-chart"></i>
                    </span>
                    <span class="post-meta-item-text">Wordcount:</span>
-                   <span class="post-count">2,622(字)</span>
+                   <span class="post-count">2,624(字)</span>
            </span>
 
             <span class="post-time">
@@ -517,6 +517,7 @@
       
         <h2 id="1-线程的原理"><a href="#1-线程的原理" class="headerlink" title="1. 线程的原理"></a>1. 线程的原理</h2><h3 id="1-1-线程的起源"><a href="#1-1-线程的起源" class="headerlink" title="1.1 线程的起源"></a>1.1 线程的起源</h3><p>现在意义上的线程是轻量级的进程，是进程中指令执行路径的描述，是多个寄存器等变量条件就绪等待 CPU 选择执行的状态，它包含着私有的程序计数器等状态来确定指令的执行顺序。线程是 CPU 利用的最小单元。</p>
 <p>通常，线程和并发联系紧密，在单处理器环境下，多个线程只能并发。具体的，将一个进程切分为多个代码段，每个代码段看做一个线程，这多个线程轮流的使用 CPU，并发的执行。</p>
+<a id="more"></a>
 <ul>
 <li>线程发明的历史表明，在早期并没有线程的命名，那时将一连串的控制流程称为 <code>process</code>。这时的 process 是可以共享内存空间，通过共享变量，旗语来交流。</li>
 <li>到后来的 Unix 中process 的概念变为由一连串的控制指令执行过程加上虚拟地址空间。这变得很笨重。它们有各自的地址空间，不共享一个内存空间，只能通过管道、信号来交流，共享内存（更为庞杂的机制）是后续才加上的。</li>
@@ -525,7 +526,7 @@
 <p>因此发明<code>thread</code>的动机是：让轻量级的 processes 可以共享资源，方便操作。线程之间的切换的代价比进程之间切换要小得多。</p>
 <h3 id="1-2-线程是并行的吗？"><a href="#1-2-线程是并行的吗？" class="headerlink" title="1.2 线程是并行的吗？"></a>1.2 线程是并行的吗？</h3><p>对于单核系统，事实上，同一个时刻CPU 只能运行一个线程。当一个进程包含多个线程，人们也许会感觉到线程是同时工作的，这是 CPU 快速切换不同线程工作的结果。比如：在 Word 中输入文字，自动调整格式和显示文字是两个线程，在单核中，CPU 会迅速切换工作，让用户感觉文字在输入后就自动的按照格式显示了，像是在同时进行。这是人的感官层次上的并行。</p>
 <p>对于多核系统，两个线程同时在不同核运行时可以的，这是真正意义上的操作系统层次的并行。这使得多核计算机可以最大化利用率。</p>
-<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-081231.png" alt=""></p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-20-081231.png" alt=""><br><em>image caption</em></p>
 <h3 id="1-3-线程是并发的"><a href="#1-3-线程是并发的" class="headerlink" title="1.3 线程是并发的"></a>1.3 线程是并发的</h3><ul>
 <li><p><strong>并发: </strong> 当有多个线程在操作时,如果系统只有一个CPU,则它根本不可能真正同时进行一个以上的线程，它只能把CPU运行时间划分成若干个时间段,再将时间 段分配给各个线程执行，在一个时间段的线程代码运行时，其它线程处于挂起状。.这种方式我们称之为并发(<code>Concurrent</code>)。</p>
 <ul>

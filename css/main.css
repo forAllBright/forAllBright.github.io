@@ -1479,9 +1479,16 @@ pre .javascript .function {
   padding: 3px;
 /*border: 1px solid $gray-lighter;*/
   max-height: 600px;
+  max-width: 500px;
   text-align: center;
   border: 1px solid #88acdb;
   border-radius: 2.5%;
+}
+.posts-expand .post-body em {
+  text-align: center;
+  margin-left: 250px;
+  background-color: #000;
+  color: #fff;
 }
 .posts-expand .post-body .fancybox img {
   margin: 0 auto 25px;
@@ -2035,7 +2042,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff47e7;
+  background: #9874d9;
 }
 .links-of-blogroll {
   font-size: 13px;
