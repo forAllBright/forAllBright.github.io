@@ -2037,7 +2037,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7cff45;
+  background: #38fa1c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2745,6 +2745,8 @@ hr {
 /*float: left;*/
   margin-left: -20px;
   line-height: normal;
+/* Chrome, Safari, Opera */
+/* Standard syntax */
 }
 @media (max-width: 767px) {
   .site-meta {
@@ -2764,47 +2766,42 @@ hr {
   display: none;
 }
 .site-meta .site-title {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: bolder;
   font-family: Comic Sans MS, Bookman, Palatino, "Microsoft YaHei", Tahoma, Arial;
-  color: #fff;
-  background-color: #222;
+  color: rgba(255,255,255,0);
+/*background-color: #222222;*/
   text-align: center;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.3);
   position: relative;
   margin: auto;
-  width: 400px;
-  line-height: 32px;
-  border: 1px solid #2b92d4;
-  border-radius: 5px;
-  color: #fff;
-  font-style: italic;
-  font-size: 26px;
-  text-align: center;
-/*cursor:pointer;*/
-  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-  overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6cc3fe), to(#21a1d0));
+  -webkit-animation: mymove 10s infinite alternate; /* Chrome, Safari, Opera */
   -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-name: breathe;
-  -webkit-animation-duration: 5700ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
+  animation: mymove 10s infinite;
 }
-@media (max-width: 767px) {
-  .site-meta .site-title {
-    line-height: 34px;
+@-webkit-keyframes mymove {
+  50% {
+    color: #04daff;
   }
 }
-@-webkit-keyframes breathe {
-  0% {
-    opacity: 0.2;
-    box-shadow: 0 1px 2px rgba(255,255,255,0.1);
+@-moz-keyframes mymove {
+  50% {
+    color: #21a1d0;
   }
-  100% {
-    opacity: 1;
-    border: 1px solid #3bebeb;
-    color: #000;
-    box-shadow: 0 1px 30px #3bffff;
+}
+@-webkit-keyframes mymove {
+  50% {
+    color: #21a1d0;
+  }
+}
+@-o-keyframes mymove {
+  50% {
+    color: #21a1d0;
+  }
+}
+@keyframes mymove {
+  50% {
+    color: #21a1d0;
   }
 }
 .logo-line-before,
