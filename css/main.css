@@ -2039,7 +2039,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #03abff;
+  background: #44b5e9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2748,7 +2748,24 @@ hr {
   margin-left: -20px;
   line-height: 45px;
 /* Chrome, Safari, Opera */
+/*@-webkit-keyframes mymove {
+    50% {color: rgb(184,196,210);}
+}*/
 /* Standard syntax */
+/*@keyframes mymove {
+    0% {}
+    50% {text-shadow:0 6px 6px rgba(255,255,255,1);}
+    10%  {color: #DDFA40; }
+    20%  {color: #FEF34B;}
+    30% {color: #FD8C3D;}
+    40% {color: #FC4335;}
+    50% {color: #2D42FB;text-shadow:0 6px 6px rgba(188,254,192,1)}
+    60% {color: #D23CFC;}
+    70% {color: #2D42FB;}
+    80% {color: #37A1FC;}
+    90% {color: #3FFEE1;}
+    100% {}
+}*/
 }
 @media (max-width: 767px) {
   .site-meta {
@@ -2777,166 +2794,14 @@ hr {
   text-align: center;
   position: relative;
   margin: auto;
-  text-shadow: 0 10px 100px rgba(0,0,0,0.2);
-/*    -webkit-animation: mymove 10s infinite ;  Chrome, Safari, Opera
-    -webkit-animation-timing-function:ease-in-out;*/
-  animation: mymove 20s infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  animation-play-state: running;
-}
-@-webkit-keyframes mymove {
-  50% {
-    color: #b8c4d2;
-  }
-}
-@-moz-keyframes mymove {
-  0% {
-    color: #8afb3f;
-    text-shadow: 0 1px 2px #fff;
-  }
-  10% {
-    color: #ddfa40;
-  }
-  20% {
-    color: #fef34b;
-  }
-  30% {
-    color: #fd8c3d;
-  }
-  40% {
-    color: #fc4335;
-  }
-  50% {
-    color: #fc2f67;
-  }
-  60% {
-    color: #d23cfc;
-  }
-  70% {
-    color: #2d42fb;
-  }
-  80% {
-    color: #37a1fc;
-  }
-  90% {
-    color: #3ffee1;
-  }
-  100% {
-    color: #8afb3f;
-    text-shadow: 0 2px 2px #3bffff;
-  }
-}
-@-webkit-keyframes mymove {
-  0% {
-    color: #8afb3f;
-    text-shadow: 0 1px 2px #fff;
-  }
-  10% {
-    color: #ddfa40;
-  }
-  20% {
-    color: #fef34b;
-  }
-  30% {
-    color: #fd8c3d;
-  }
-  40% {
-    color: #fc4335;
-  }
-  50% {
-    color: #fc2f67;
-  }
-  60% {
-    color: #d23cfc;
-  }
-  70% {
-    color: #2d42fb;
-  }
-  80% {
-    color: #37a1fc;
-  }
-  90% {
-    color: #3ffee1;
-  }
-  100% {
-    color: #8afb3f;
-    text-shadow: 0 2px 2px #3bffff;
-  }
-}
-@-o-keyframes mymove {
-  0% {
-    color: #8afb3f;
-    text-shadow: 0 1px 2px #fff;
-  }
-  10% {
-    color: #ddfa40;
-  }
-  20% {
-    color: #fef34b;
-  }
-  30% {
-    color: #fd8c3d;
-  }
-  40% {
-    color: #fc4335;
-  }
-  50% {
-    color: #fc2f67;
-  }
-  60% {
-    color: #d23cfc;
-  }
-  70% {
-    color: #2d42fb;
-  }
-  80% {
-    color: #37a1fc;
-  }
-  90% {
-    color: #3ffee1;
-  }
-  100% {
-    color: #8afb3f;
-    text-shadow: 0 2px 2px #3bffff;
-  }
-}
-@keyframes mymove {
-  0% {
-    color: #8afb3f;
-    text-shadow: 0 1px 2px #fff;
-  }
-  10% {
-    color: #ddfa40;
-  }
-  20% {
-    color: #fef34b;
-  }
-  30% {
-    color: #fd8c3d;
-  }
-  40% {
-    color: #fc4335;
-  }
-  50% {
-    color: #fc2f67;
-  }
-  60% {
-    color: #d23cfc;
-  }
-  70% {
-    color: #2d42fb;
-  }
-  80% {
-    color: #37a1fc;
-  }
-  90% {
-    color: #3ffee1;
-  }
-  100% {
-    color: #8afb3f;
-    text-shadow: 0 2px 2px #3bffff;
-  }
+  text-shadow: 0 6px 6px rgba(255,254,254,0.8);
+/*    text-shadow:0 10px 100px rgba(0,0,0,0.2);
+    -webkit-animation: mymove 10s infinite ;  Chrome, Safari, Opera
+    -webkit-animation-timing-function:ease-in-out;
+    animation: mymove 20s infinite;
+    animation-direction:alternate;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;*/
 }
 .logo-line-before,
 .logo-line-after {
