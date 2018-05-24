@@ -162,7 +162,8 @@
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-130804.png">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1frmloy1w2cj30zy0cagq4.jpg">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-133444.png">
-<meta property="og:updated_time" content="2018-05-24T14:21:28.000Z">
+<meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-142641.png">
+<meta property="og:updated_time" content="2018-05-24T14:32:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统-8章">
 <meta name="twitter:description" content="线程的同步1. 进程锁什么是线程竞争线程竞争(Threads Contention): 本质上是多个线程同时又想占用某个共享资源的趋势。竞争中的线程的速度比单线程要低。这有多重意义：  有锁必然有竞争。通常的竞争是指一个线程必须等待一个被占用的资源释放后才能继续，这就降低了此线程的速度。">
@@ -423,7 +424,7 @@
                 
               
 
-              <time title="Created: 2018-05-24 22:21:20 / Modified: 22:21:28" itemprop="dateCreated datePublished" datetime="2018-05-24T22:21:20+08:00">2018-05-24</time>
+              <time title="Created: 2018-05-24 22:21:20 / Modified: 22:32:59" itemprop="dateCreated datePublished" datetime="2018-05-24T22:21:20+08:00">2018-05-24</time>
             
 
             
@@ -466,7 +467,7 @@
                      <i class="fa fa-line-chart"></i>
                    </span>
                    <span class="post-meta-item-text">Wordcount:</span>
-                   <span class="post-count">2,113(字)</span>
+                   <span class="post-count">2,207(字)</span>
            </span>
 
             <span class="post-time">
@@ -569,7 +570,16 @@
 <p>一般的旗语可以类比公共图书馆，而且不会有滞纳金。比如图书馆里有5本 Python cookbook，当先到的前5个人都借去了，再来的人只能先回去；等其中一个（不管哪个）还来一本，图书馆就会通知之前排队在前的来取，若是没有人在排队，图书馆就会上架图书。</p>
 <p>常见的是二元信号量，只有0 、1两个取值。那么 Down 至0 和 Up 至 1 就类似于锁的获得和释放。注意的是，二元信号量是有Sleep 和 Wakeup的，不同于锁的等待。</p>
 <p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-133444.png" alt=""></p>
-<h4 id="管程-Monitor"><a href="#管程-Monitor" class="headerlink" title="管程(Monitor)"></a>管程(Monitor)</h4><p>###3. 多计算机之间线程的“同步”</p>
+<h4 id="管程-Monitor"><a href="#管程-Monitor" class="headerlink" title="管程(Monitor)"></a>管程(Monitor)</h4><p>Monitor = Lock + Condition Variables</p>
+<p>Lock：锁住 Critical Section</p>
+<p>Condition Variables：在 Critical Section 中控制线程 Sleep 或 Wakeup。线程 sleep 与释放锁操作是原子性的，没有间隙；否则会出现有两个线程同时活跃在 Critical Section 的情况。 </p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-142641.png" alt=""></p>
+<p>###3. 多计算机之间的线程同步</p>
+<p>Monitor的缺点：</p>
+<ol>
+<li>依赖于编译器将同步源语加在 Monitor 的开始和结尾</li>
+<li>只能在单机shang使用</li>
+</ol>
 <p>###4. 参考 </p>
 <blockquote>
 <p><a href="https://en.wikipedia.org/wiki/Critical_section" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Critical_section</a></p>
