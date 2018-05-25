@@ -159,11 +159,13 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1frm912ldfrj30te0d275y.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1frm94um26yj30im08idgu.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1frmivqugtuj30l80dcdhs.jpg">
-<meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-130804.png">
+<meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-25-022946.png">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1frmloy1w2cj30zy0cagq4.jpg">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-133444.png">
+<meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-130804.png">
 <meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-142641.png">
-<meta property="og:updated_time" content="2018-05-24T15:30:16.000Z">
+<meta property="og:image" content="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-25-030714.png">
+<meta property="og:updated_time" content="2018-05-25T03:16:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="操作系统-8章">
 <meta name="twitter:description" content="线程的同步1. 进程锁什么是线程竞争线程竞争(Threads Contention): 本质上是多个线程同时又想占用某个共享资源的趋势。竞争中的线程的速度比单线程要低。这有多重意义：  有锁必然有竞争。通常的竞争是指一个线程必须等待一个被占用的资源释放后才能继续，这就降低了此线程的速度。">
@@ -424,12 +426,24 @@
                 
               
 
-              <time title="Created: 2018-05-24 22:21:20 / Modified: 23:30:16" itemprop="dateCreated datePublished" datetime="2018-05-24T22:21:20+08:00">2018-05-24</time>
+              <time title="Created: 2018-05-24 22:21:20" itemprop="dateCreated datePublished" datetime="2018-05-24T22:21:20+08:00">2018-05-24</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-05-25 11:16:33" itemprop="dateModified" datetime="2018-05-25T11:16:33+08:00">2018-05-25</time>
               
             
           </span>
@@ -467,7 +481,7 @@
                      <i class="fa fa-line-chart"></i>
                    </span>
                    <span class="post-meta-item-text">Wordcount:</span>
-                   <span class="post-count">2,207(字)</span>
+                   <span class="post-count">2,440(字)</span>
            </span>
 
             <span class="post-time">
@@ -476,7 +490,7 @@
                      <i class="fa fa-user-times:"></i>
                    </span>
                    <span class="post-meta-item-text">Duration:</span>
-                   <span class="post-count">8(分)</span>
+                   <span class="post-count">9(分)</span>
             </span>
 
 
@@ -556,32 +570,40 @@
 <p>Sleep and Wakeup采用的是，当线程得知资源暂时不可用（lock）就 Sleep，即挂起状态，CPU 不会分配资源给它；一旦资源得到释放（unlock），释放资源的那个线程就会发送 Wakeup 信号给正在 Sleeping 的排队在最前的那位，那这个线程就会被Wakeup，得到资源使用权。</p>
 <p>生产者与消费者(Producer and Consumer):</p>
 <ul>
-<li>当队列空的，当CPU 切换到Consumer， 当一个 Consumer 想去消费，然后进入 Sleep</li>
-<li>当队列满的，当CPU 切换到 Producer，当一个 Producer 想继续生产，然后进入 Sleep</li>
-<li>当队列是满的，此时 Producer 是 Sleep，当CPU 切换到Consumer，在消费一个后，发信号给 Producer 需要生产了</li>
-<li>当队列是空的，此时 Consumer 是 Sleep，当CPU 在切换到 Producer，在生产一个后，发信号给Consumer可以来消费了</li>
+<li><p>当队列空的，当CPU 切换到Consumer， 当一个 Consumer 想去消费，然后进入 Sleep</p>
+</li>
+<li><p>当队列满的，当CPU 切换到 Producer，当一个 Producer 想继续生产，然后进入 Sleep</p>
+</li>
+<li><p>当队列是满的，此时 Producer 是 Sleep，当CPU 切换到Consumer，在消费一个后，发信号给 Producer 需要生产了</p>
+</li>
+<li><p>当队列是空的，此时 Consumer 是 Sleep，当CPU 在切换到 Producer，在生产一个后，发信号给Consumer可以来消费了</p>
+</li>
+<li><p>生产者消费者模式也称为“有限缓存模型”，缓存的存在主要是为了减少每一次生产、消费都要进行锁的操作。当缓存不是满或空的状态，生产者和消费者都能自己正常工作，不会进入 Sleep，自然也就不需要Wakeup。</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-25-022946.png" alt=""></p>
+</li>
 </ul>
-<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-130804.png" alt=""></p>
 <p>Sleep and Wakeup 的信号丢失问题，将产生死锁，生产者与消费者都不会继续推进：</p>
 <p>原因是，Consumer接收Sleep信号后与 Sleep动作 有间隙。</p>
 <p>解决办法：引入旗语，把对方发的信号都累积起来，避免丢失。</p>
 <h4 id="旗语-semaphore"><a href="#旗语-semaphore" class="headerlink" title="旗语(semaphore)"></a>旗语(semaphore)</h4><p>本质上是一个计数器，有Up 与 Down 操作，且 Up、Down 都是原子性操作。旗语对线程的操作和 Sleep and Wakeup 类似，当值=0时，消费线程就会Sleep；当值=上界，生产线程就会 Sleep。</p>
 <p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1frmloy1w2cj30zy0cagq4.jpg" alt=""></p>
 <p>一般的旗语可以类比公共图书馆，而且不会有滞纳金。比如图书馆里有5本 Python cookbook，当先到的前5个人都借去了，再来的人只能先回去；等其中一个（不管哪个）还来一本，图书馆就会通知之前排队在前的来取，若是没有人在排队，图书馆就会上架图书。</p>
-<p>常见的是二元信号量，只有0 、1两个取值。那么 Down 至0 和 Up 至 1 就类似于锁的获得和释放。注意的是，二元信号量是有Sleep 和 Wakeup的，不同于锁的等待。</p>
 <p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-133444.png" alt=""></p>
+<p>常见的是二元信号量，只有0 、1两个取值。那么 Down 至0 和 Up 至 1 就类似于锁的获得和释放。注意的是，二元信号量是有Sleep 和 Wakeup的，不同于锁的等待。以下的 Busy / Free 就相当于锁的获得，锁的释放。</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-130804.png" alt=""></p>
 <h4 id="管程-Monitor"><a href="#管程-Monitor" class="headerlink" title="管程(Monitor)"></a>管程(Monitor)</h4><p>Monitor = Lock + Condition Variables</p>
 <p>Lock：锁住 Critical Section</p>
-<p>Condition Variables：在 Critical Section 中控制线程 Sleep 或 Wakeup。线程 sleep 与释放锁操作是原子性的，没有间隙；否则会出现有两个线程同时活跃在 Critical Section 的情况。 </p>
+<p>Condition Variables：在 Critical Section 中控制线程 Sleep 或 Wakeup。线程 sleep 与释放锁操作是原子性的，没有间隙；否则会出现有两个线程同时活跃在 Critical Section 的情况。 尽可能的让在Monitor 中让线程做的工作少，在 Monitor 外的部分处理 Monitor 内部分的结果，让不同的线程在 Monitor 中可以更快的响应。</p>
 <p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-24-142641.png" alt=""></p>
-<p>###3. 多计算机之间的线程同步</p>
-<p>Monitor的缺点：</p>
+<h3 id="3-多计算机之间的线程同步"><a href="#3-多计算机之间的线程同步" class="headerlink" title="3. 多计算机之间的线程同步"></a>3. 多计算机之间的线程同步</h3><p>Monitor的缺点：</p>
 <ol>
 <li>依赖于编译器将同步源语加在 Monitor 的开始和结尾</li>
-<li>只能在单机shang使用</li>
+<li>只能在单机上使用</li>
 </ol>
-<p>###4. 参考 </p>
-<blockquote>
+<p>消息传递：Send/Receive，以下是用消息传递实现 Producer and Consumer，并定义了缓存大小100</p>
+<p><img src="http://p8gbnxign.bkt.clouddn.com/blog/2018-05-25-030714.png" alt=""></p>
+<p>消息传递可以在多态计算机之间进行线程同步，是目前流行的方法。其特有的方式使得不存在像 Sleep and Wakeup的死锁，也不会有繁忙的等待消耗 CPU。</p>
+<h3 id="4-参考"><a href="#4-参考" class="headerlink" title="4. 参考"></a>4. 参考</h3><blockquote>
 <p><a href="https://en.wikipedia.org/wiki/Critical_section" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Critical_section</a></p>
 <p><a href="https://cs162.eecs.berkeley.edu/static/lectures/7.pdf" target="_blank" rel="noopener">https://cs162.eecs.berkeley.edu/static/lectures/7.pdf</a></p>
 <p><a href="https://cs162.eecs.berkeley.edu/static/lectures/8.pdf" target="_blank" rel="noopener">https://cs162.eecs.berkeley.edu/static/lectures/8.pdf</a></p>
@@ -833,7 +855,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#线程的同步"><span class="nav-text">线程的同步</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-进程锁"><span class="nav-text">1. 进程锁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是线程竞争"><span class="nav-text">什么是线程竞争</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是“临界区”"><span class="nav-text">什么是“临界区”</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-单机中线程”同步”方法的发展"><span class="nav-text">2. 单机中线程”同步”方法的发展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#便条-Note"><span class="nav-text">便条(Note)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#锁-Lock"><span class="nav-text">锁(Lock)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#睡眠与唤醒-Sleep-and-Wakeup"><span class="nav-text">睡眠与唤醒(Sleep and Wakeup)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#旗语-semaphore"><span class="nav-text">旗语(semaphore)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#管程-Monitor"><span class="nav-text">管程(Monitor)</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#线程的同步"><span class="nav-text">线程的同步</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-进程锁"><span class="nav-text">1. 进程锁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是线程竞争"><span class="nav-text">什么是线程竞争</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是“临界区”"><span class="nav-text">什么是“临界区”</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-单机中线程”同步”方法的发展"><span class="nav-text">2. 单机中线程”同步”方法的发展</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#便条-Note"><span class="nav-text">便条(Note)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#锁-Lock"><span class="nav-text">锁(Lock)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#睡眠与唤醒-Sleep-and-Wakeup"><span class="nav-text">睡眠与唤醒(Sleep and Wakeup)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#旗语-semaphore"><span class="nav-text">旗语(semaphore)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#管程-Monitor"><span class="nav-text">管程(Monitor)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-多计算机之间的线程同步"><span class="nav-text">3. 多计算机之间的线程同步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-参考"><span class="nav-text">4. 参考</span></a></li></ol></li></ol></div>
             
 
           </div>
