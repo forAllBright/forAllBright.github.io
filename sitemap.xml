@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://forallbright.github.io/about/index.html</loc>
+    
+    <lastmod>2018-11-28T13:01:59.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://forallbright.github.io/2018/11/28/Iterm2%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     
     <lastmod>2018-11-28T11:34:17.000Z</lastmod>
@@ -152,13 +159,6 @@
     <loc>https://forallbright.github.io/2018/05/07/%E5%85%83%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/</loc>
     
     <lastmod>2018-05-18T13:53:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://forallbright.github.io/about/index.html</loc>
-    
-    <lastmod>2018-05-06T08:08:15.000Z</lastmod>
     
   </url>
   
