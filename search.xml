@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>Learn Python Library </title>
+      <link href="/2018/11/29/how-to-learn-python-library/"/>
+      <url>/2018/11/29/how-to-learn-python-library/</url>
+      <content type="html"><![CDATA[<p>How does one learns anything new? Remember the time when you learned to write, the time you learned to cycle, the time you learned to operate a computer etc. All of these learning have one thing in common: the ability of humans to recognize patterns.</p><p>Now coming to this specific question, first of all, a basic understanding of what the library does is important for diving deep into it.</p><p>Over the years I can sum up the way to learn python library into three steps:</p><p>help(library): The help method is a built-in python help system. It works in interactive mode. So, while developing python programs, fire up a python shell in a terminal and use help() method to get help on modules, functions or any python object.<br>For example, suppose you want to learn numpy(used for fast array computations) library Just type help(numpy) in python shell to get documentation on it.</p><p>An snippet of help on numpy package.</p><p><code>help(numpy)</code></p><p>Stackoverflow: Stackoverflow have tons of question and answers regarding python. It comes to rescue when examples and docstring from help() method is not sufficient or available. Ask for help about specific usecase like function parameters etc.<br>For example:</p><p><a href="https://stackoverflow.com/questions/48494581/converting-an-input-string-to-a-numpy-slice" target="_blank" rel="noopener">https://stackoverflow.com/questi…</a></p><p>Read Code: Last but the most used by great developers over the decades. Now to use it , one needs to know the file path in which specific class, method or module is written in.<br>Use python built-in inspect module to get the file path in an interactive shell first.</p><p>Important: This only works for modules or objects which are not built-in .</p><p><code>import inspect</code></p><blockquote><p>replace ‘name’ by appropriate method, module or class name</p></blockquote><p><code>inspect.getmodule(name).__file__</code></p><p>Once you have the file path , use any editor to open file and start reading the relevant lines.</p><blockquote><p><a href="https://www.quora.com/How-do-I-learn-a-python-library#" target="_blank" rel="noopener">https://www.quora.com/How-do-I-learn-a-python-library#</a></p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category> Programming </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> Learn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Mac设置多个ssh-key</title>
       <link href="/2018/11/28/Mac%E8%AE%BE%E7%BD%AE%E5%A4%9A%E4%B8%AAssh-key/"/>
       <url>/2018/11/28/Mac%E8%AE%BE%E7%BD%AE%E5%A4%9A%E4%B8%AAssh-key/</url>
@@ -146,6 +169,27 @@
         <tags>
             
             <tag> 读书笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title> </title>
+      <link href="/2018/05/24/temp/"/>
+      <url>/2018/05/24/temp/</url>
+      <content type="html"><![CDATA[<h2 id="线程的同步"><a href="#线程的同步" class="headerlink" title="线程的同步"></a>线程的同步</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><blockquote><p><a href="http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html" target="_blank" rel="noopener">http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html</a></p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category>   </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag>   </tag>
             
         </tags>
       
