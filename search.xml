@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>Mac设置多个ssh-key</title>
+      <link href="/2018/11/28/Mac%E8%AE%BE%E7%BD%AE%E5%A4%9A%E4%B8%AAssh-key/"/>
+      <url>/2018/11/28/Mac%E8%AE%BE%E7%BD%AE%E5%A4%9A%E4%B8%AAssh-key/</url>
+      <content type="html"><![CDATA[<p>需要给ssh配置多个key，不用名对应不同key文件。</p><ol><li><p>创建config文件<br>cd .ssh<br>touch config</p></li><li><p>创建ssh-key<br>ssh-keygen -t rsa -f ~/.ssh/id_rsa.别名 -C “邮箱地址“<br>示例</p><a id="more"></a></li></ol><p>ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C “<a href="mailto:xxx@xxx.com" target="_blank" rel="noopener">xxx@xxx.com</a>“<br>ssh-keygen -t rsa -f ~/.ssh/id_rsa.gitee -C “<a href="mailto:xxx@xxx.com" target="_blank" rel="noopener">xxx@xxx.com</a>“<br>ssh-key文件已经生成到指定路径了，那么接下来我们来配置一下。</p><ol start="3"><li><p>配置（仅供参考）</p><h1 id="second-user-xxx-xxx-com"><a href="#second-user-xxx-xxx-com" class="headerlink" title="second user(xxx@xxx.com)"></a>second user(<a href="mailto:xxx@xxx.com" target="_blank" rel="noopener">xxx@xxx.com</a>)</h1><h1 id="建一个github别名，新建的帐号使用这个别名做克隆和更新"><a href="#建一个github别名，新建的帐号使用这个别名做克隆和更新" class="headerlink" title="建一个github别名，新建的帐号使用这个别名做克隆和更新"></a>建一个github别名，新建的帐号使用这个别名做克隆和更新</h1><p>Host github<br>HostName github.com<br>User git<br>IdentityFile ~/.ssh/id_rsa.github</p><p>second user(<a href="mailto:xxx@xxx.com" target="_blank" rel="noopener">xxx@xxx.com</a>)<br>建一个gitee别名，新建的帐号使用这个别名做克隆和更新<br>Host gitee<br>HostName gitee.com<br>User git<br>IdentityFile ~/.ssh/id_rsa.gitee<br>Host是别名。如果只是为了区分github、gitee等，为了方便使用，建议和HostName一致，这样在clone git的时候不用考虑修改hostname。<br>如果只是为了区分github、gitee等，</p></li></ol><ol start="4"><li>通过别名来使用<br>ssh -T gitee<br>返回：Welcome to Gitee.com, xxx!</li></ol><p>表示成功</p><p>ssh -T github<br>返回：Hi xinwen-mao! You’ve successfully authenticated, but GitHub does not provide shell access.<br>表示成功</p><p>参考：</p><p><a href="https://www.v2ex.com/t/342738" target="_blank" rel="noopener">https://www.v2ex.com/t/342738</a></p><p><a href="http://riny.net/2014/git-ssh-key/" target="_blank" rel="noopener">http://riny.net/2014/git-ssh-key/</a></p><p><a href="https://www.cnblogs.com/zichi/p/4704824.html" target="_blank" rel="noopener">https://www.cnblogs.com/zichi/p/4704824.html</a></p>]]></content>
+      
+      <categories>
+          
+          <category> 软件工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag>  Mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Iterm2快捷键</title>
       <link href="/2018/11/28/Iterm2%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
       <url>/2018/11/28/Iterm2%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
