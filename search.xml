@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>Mac 中搜索文件</title>
+      <link href="/2018/11/29/command-find-for-search-file/"/>
+      <url>/2018/11/29/command-find-for-search-file/</url>
+      <content type="html"><![CDATA[<h2 id="命令行-find-查找"><a href="#命令行-find-查找" class="headerlink" title="命令行 find 查找"></a>命令行 find 查找</h2><ul><li>指定找文件<br><code>find / -iname &quot;*.pdf&quot; -type f</code></li><li>指定找文件夹<br><code>find / -iname &quot;*.pdf&quot; -type d</code></li><li>通用查找<br><code>find . &quot;*&quot; | grep -P &quot;.jpg&quot;</code><br><code>find / -iname &quot;*.pdf&quot;</code></li><li>使用正则表达式查找,<code>-E</code>是扩展的正则查找<br><code>find -E . -regex &quot;.*.jpg&quot;</code></li></ul><h2 id="软件查找"><a href="#软件查找" class="headerlink" title="软件查找"></a>软件查找</h2><p><a href="https://www.devontechnologies.com/download/products.html" target="_blank" rel="noopener">Easyfind</a></p>]]></content>
+      
+      <categories>
+          
+          <category> Progamming </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Learn Python Library </title>
       <link href="/2018/11/29/how-to-learn-python-library/"/>
       <url>/2018/11/29/how-to-learn-python-library/</url>
