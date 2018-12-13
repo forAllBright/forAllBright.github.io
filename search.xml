@@ -6,7 +6,7 @@
       <title>那个我爱的人</title>
       <link href="/2018/12/02/%E6%88%91%E7%88%B1%E7%9A%84%E4%BA%BA/"/>
       <url>/2018/12/02/%E6%88%91%E7%88%B1%E7%9A%84%E4%BA%BA/</url>
-      <content type="html"><![CDATA[<h2 id="她"><a href="#她" class="headerlink" title="她"></a>她</h2><p>​        她在我心里从未变过，时隔8年，此刻还是那种心动的感觉。她身材娇小，和她部分刚烈的性格显得有些不符；她也会哭泣，惹人怜和心疼；她有灵性，时常有些新的点子，就像星光样忽闪忽闪；她会生气，会发脾气，会打你，可怎么都不会让你真正的去对她生气。对，这就是她，那个我爱的人。</p><p>​    我们相识于8年前，大一时我只是在人群中多看了她一眼就心动了，哈这句有点俗套（问号脸），可确实如此。那时的她脸上的笑容好美。</p><h2 id="我们"><a href="#我们" class="headerlink" title="我们"></a>我们</h2><h2 id="大学"><a href="#大学" class="headerlink" title="大学"></a>大学</h2><h2 id="毕业后"><a href="#毕业后" class="headerlink" title="毕业后"></a>毕业后</h2><h2 id="现在"><a href="#现在" class="headerlink" title="现在"></a>现在</h2><p>我爱她。</p>]]></content>
+      <content type="html"><![CDATA[<p><img src="https://gitee.com/Pbright/Blogpics/raw/master/love.png" alt="https://gitee.com/Pbright/Blogpics/raw/master/love.png"></p><h2 id="她"><a href="#她" class="headerlink" title="她"></a>她</h2><p>​        她在我心里从未变过，时隔8年，此刻还是那种心动的感觉。她身材娇小，和她部分刚烈的性格显得有些不符；她也会哭泣，惹人怜和心疼；她有灵性，时常有些新的点子，就像星光样忽闪忽闪；她会生气，会发脾气，会打你，可怎么都不会让你真正的去对她生气。对，这就是她，那个我爱的人。</p><p>​    我们相识于8年前，大一时我只是在人群中多看了她一眼就心动了，哈这句有点俗套（问号脸），可确实如此。那时的她脸上的笑容好美。</p><h2 id="我们"><a href="#我们" class="headerlink" title="我们"></a>我们</h2><h2 id="大学"><a href="#大学" class="headerlink" title="大学"></a>大学</h2><h2 id="毕业后"><a href="#毕业后" class="headerlink" title="毕业后"></a>毕业后</h2><h2 id="现在"><a href="#现在" class="headerlink" title="现在"></a>现在</h2><p>我爱她。</p>]]></content>
       
       <categories>
           
@@ -196,27 +196,6 @@
     </entry>
     
     <entry>
-      <title> </title>
-      <link href="/2018/05/24/temp/"/>
-      <url>/2018/05/24/temp/</url>
-      <content type="html"><![CDATA[<h2 id="线程的同步"><a href="#线程的同步" class="headerlink" title="线程的同步"></a>线程的同步</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><blockquote><p><a href="http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html" target="_blank" rel="noopener">http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html</a></p></blockquote>]]></content>
-      
-      <categories>
-          
-          <category>   </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag>   </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>操作系统-8章</title>
       <link href="/2018/05/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-8%E7%AB%A0/"/>
       <url>/2018/05/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-8%E7%AB%A0/</url>
@@ -232,6 +211,27 @@
         <tags>
             
             <tag> 读书笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title> </title>
+      <link href="/2018/05/24/temp/"/>
+      <url>/2018/05/24/temp/</url>
+      <content type="html"><![CDATA[<h2 id="线程的同步"><a href="#线程的同步" class="headerlink" title="线程的同步"></a>线程的同步</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><blockquote><p><a href="http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html" target="_blank" rel="noopener">http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html</a></p></blockquote>]]></content>
+      
+      <categories>
+          
+          <category>   </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag>   </tag>
             
         </tags>
       
