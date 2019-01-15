@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>TCP_面向连接的通信协议</title>
+      <link href="/2019/01/15/TCP_%E9%9D%A2%E5%90%91%E8%BF%9E%E6%8E%A5%E7%9A%84%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+      <url>/2019/01/15/TCP_%E9%9D%A2%E5%90%91%E8%BF%9E%E6%8E%A5%E7%9A%84%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</url>
+      <content type="html"><![CDATA[<p>面向连接的通信是指TCP 目的是建立与远程计算机的连接，TCP 保持着该连接的状态，因此它是可靠的通信协议。一个TCP 连接由 IP 地址、虚拟端口号来表征，而在数据传输过程中需要对数据段打上“序列标记”，以保证在接收端重组数据时不会出错。最大传输数据大小通过反馈机制来协商确定，这称为“窗口化”。  </p><p>IP 地址、虚拟端口号、窗口大小构成了一个连接或管道。例如，当你通过浏览器打开一个网站，正式建立了一个在浏览器与网站之间的TCP连接。你的本地计算机使用 IP 地址和虚拟端口号来表征自己；本地计算机建立一个连接，连接至网站 IP 地址和对应的端口（如 HTTP 所使用的80端口），然后在 TCP 连接的基础上进行数据的传输。  </p><p>TCP 使用3次握手来建立一个连接，注意尽管在3次握手过程中，双方都初始化了 TCP socket，但是还是有方向之分，客户端 -&gt; 服务端 开始3次握手 与 反方向是不一样的，因此3次握手是单向的。</p>]]></content>
+      
+      <categories>
+          
+          <category> 网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TCP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>TCP_头部信息</title>
       <link href="/2019/01/15/TCP_%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF/"/>
       <url>/2019/01/15/TCP_%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF/</url>
@@ -322,27 +343,6 @@
     </entry>
     
     <entry>
-      <title>TCP-头部信息</title>
-      <link href="/2018/05/18/temp/"/>
-      <url>/2018/05/18/temp/</url>
-      <content type="html"><![CDATA[<h2 id="TCP-header"><a href="#TCP-header" class="headerlink" title="TCP header"></a>TCP header</h2><p>TCP头部是 TCP 数据段的前24个字节，其包含了 TCP socket 的参数和状态，TCP头部用来跟踪双方通信的状态。因为TCP 数据段是插入在 IP 数据包的有效载荷中，因此在传输中TCP 头部紧跟着 IP 头。</p><p>TCP 并不关心通信双方的系统情况，它只要追踪双方的哪些 socket 是被打开的。IP 协议处理逻辑地址、路由、及主机与主机的连接。</p><p>TCP 在通信双方使用端口号来追踪连接节点，通过使用一些状态位，如 SYN、ACK、RST、FIN、sequence 号、acknowledgement 号来追踪双方数据传输的每一步通信。</p><p>TCP数据包图解：</p><p><img src="https://gitee.com/Pbright/Blogpics/raw/master/TCP数据包图解.png" alt="TCP数据包图解.png"></p>]]></content>
-      
-      <categories>
-          
-          <category> 网络 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> TCP </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>程序计数器</title>
       <link href="/2018/05/18/%E7%A8%8B%E5%BA%8F%E8%AE%A1%E6%95%B0%E5%99%A8/"/>
       <url>/2018/05/18/%E7%A8%8B%E5%BA%8F%E8%AE%A1%E6%95%B0%E5%99%A8/</url>
@@ -616,6 +616,27 @@
         <tags>
             
             <tag> Web前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title> </title>
+      <link href="/2017/01/18/temp/"/>
+      <url>/2017/01/18/temp/</url>
+      <content type="html"><![CDATA[]]></content>
+      
+      <categories>
+          
+          <category>   </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag>   </tag>
             
         </tags>
       
