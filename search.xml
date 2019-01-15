@@ -217,27 +217,6 @@
     </entry>
     
     <entry>
-      <title> </title>
-      <link href="/2018/05/24/temp/"/>
-      <url>/2018/05/24/temp/</url>
-      <content type="html"><![CDATA[<h2 id="线程的同步"><a href="#线程的同步" class="headerlink" title="线程的同步"></a>线程的同步</h2><h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><blockquote><p><a href="http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html" target="_blank" rel="noopener">http://www.cse.iitm.ac.in/~chester/courses/15o_os/syllabus.html</a></p></blockquote>]]></content>
-      
-      <categories>
-          
-          <category>   </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag>   </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>操作系统-8章</title>
       <link href="/2018/05/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-8%E7%AB%A0/"/>
       <url>/2018/05/24/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-8%E7%AB%A0/</url>
@@ -325,6 +304,27 @@
       <title>TCP-头部信息</title>
       <link href="/2018/05/18/TCP-%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF/"/>
       <url>/2018/05/18/TCP-%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF/</url>
+      <content type="html"><![CDATA[<h2 id="TCP-header"><a href="#TCP-header" class="headerlink" title="TCP header"></a>TCP header</h2><p>TCP头部是 TCP 数据段的前24个字节，其包含了 TCP socket 的参数和状态，TCP头部用来跟踪双方通信的状态。因为TCP 数据段是插入在 IP 数据包的有效载荷中，因此在传输中TCP 头部紧跟着 IP 头。</p><p>TCP 并不关心通信双方的系统情况，它只要追踪双方的哪些 socket 是被打开的。IP 协议处理逻辑地址、路由、及主机与主机的连接。</p><p>TCP 在通信双方使用端口号来追踪连接节点，通过使用一些状态位，如 SYN、ACK、RST、FIN、sequence 号、acknowledgement 号来追踪双方数据传输的每一步通信。</p><p>TCP数据包图解：</p><p><img src="https://gitee.com/Pbright/Blogpics/raw/master/TCP数据包图解.png" alt="TCP数据包图解.png"></p>]]></content>
+      
+      <categories>
+          
+          <category> 网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TCP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>TCP-头部信息</title>
+      <link href="/2018/05/18/temp/"/>
+      <url>/2018/05/18/temp/</url>
       <content type="html"><![CDATA[<h2 id="TCP-header"><a href="#TCP-header" class="headerlink" title="TCP header"></a>TCP header</h2><p>TCP头部是 TCP 数据段的前24个字节，其包含了 TCP socket 的参数和状态，TCP头部用来跟踪双方通信的状态。因为TCP 数据段是插入在 IP 数据包的有效载荷中，因此在传输中TCP 头部紧跟着 IP 头。</p><p>TCP 并不关心通信双方的系统情况，它只要追踪双方的哪些 socket 是被打开的。IP 协议处理逻辑地址、路由、及主机与主机的连接。</p><p>TCP 在通信双方使用端口号来追踪连接节点，通过使用一些状态位，如 SYN、ACK、RST、FIN、sequence 号、acknowledgement 号来追踪双方数据传输的每一步通信。</p><p>TCP数据包图解：</p><p><img src="https://gitee.com/Pbright/Blogpics/raw/master/TCP数据包图解.png" alt="TCP数据包图解.png"></p>]]></content>
       
       <categories>
