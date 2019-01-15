@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>TCP-3次握手</title>
+      <link href="/2019/01/15/TCP-3%E6%AC%A1%E6%8F%A1%E6%89%8B/"/>
+      <url>/2019/01/15/TCP-3%E6%AC%A1%E6%8F%A1%E6%89%8B/</url>
+      <content type="html"><![CDATA[<h2 id="TCP-的可靠性"><a href="#TCP-的可靠性" class="headerlink" title="TCP 的可靠性"></a>TCP 的可靠性</h2><p>TCP提供了一种数据段错误恢复机制，如数据段毁坏、重复、接收次序错乱，因此TCP 被称为是可靠协议。</p><p>数据段的次序通过在数据段中打上“序列标签”，这种序列标签使得 TCP 能够检测出丢失的数据段；同时，TCP 在传输数据后，需要对方给出“确认信号”来确认收到。</p><p>一般通过 CRC 校验码来检测数据段的，CRC 校验算法中加入了时间戳，在TCP 的每次跳转后都要重新进行 CRC 的验算，不符合结果的数据段将被丢弃。</p><h2 id="TCP-3次握手"><a href="#TCP-3次握手" class="headerlink" title="TCP 3次握手"></a>TCP 3次握手</h2><p>TCP 协议通过3次握手机制来建立 TCP/IP连接，可用 SYN–SYN+ACK–ACK 来表示。3次握手机制目的是双方协商出TCP socket 连接的参数，用以通过 SSH 或 HTTP 来传输数据。</p><p>设计3次握手机制也是为了双方能够在同一个时间点对各自的多个TCP socket做初始化和协商，这保证了唯一的物理网络接口，如以太网卡，能够同时传输多个 TCP 数据流。</p><p><img src="https://gitee.com/Pbright/Blogpics/raw/master/3次握手.png" alt="3次握手.png"></p><p>3次握手中通过不断的发送请求同步信号和确认信号，来保证数据包接收成功和在组装数据时数据包的顺序正确。</p><p>注意：UDP 是无连接的，这意味着UDP 不会像 TCP 这样去通过3次握手建立连接，UDP称为不可靠协议。这不是说 UDP 不能传输数据，只是不会进行双方的协商建立连接过程，UDP 只是传输然后期待数据传输成功。</p>]]></content>
+      
+      <categories>
+          
+          <category> 网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TCP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>那个我爱的人</title>
       <link href="/2018/12/02/%E6%88%91%E7%88%B1%E7%9A%84%E4%BA%BA/"/>
       <url>/2018/12/02/%E6%88%91%E7%88%B1%E7%9A%84%E4%BA%BA/</url>
@@ -295,6 +316,27 @@
         <tags>
             
             <tag> 读书笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>TCP-头部信息</title>
+      <link href="/2018/05/18/TCP-%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF/"/>
+      <url>/2018/05/18/TCP-%E5%A4%B4%E9%83%A8%E4%BF%A1%E6%81%AF/</url>
+      <content type="html"><![CDATA[<h2 id="TCP-header"><a href="#TCP-header" class="headerlink" title="TCP header"></a>TCP header</h2><p>TCP头部是 TCP 数据段的前24个字节，其包含了 TCP socket 的参数和状态，TCP头部用来跟踪双方通信的状态。因为TCP 数据段是插入在 IP 数据包的有效载荷中，因此在传输中TCP 头部紧跟着 IP 头。</p><p>TCP 并不关心通信双方的系统情况，它只要追踪双方的哪些 socket 是被打开的。IP 协议处理逻辑地址、路由、及主机与主机的连接。</p><p>TCP 在通信双方使用端口号来追踪连接节点，通过使用一些状态位，如 SYN、ACK、RST、FIN、sequence 号、acknowledgement 号来追踪双方数据传输的每一步通信。</p><p>TCP数据包图解：</p><p><img src="https://gitee.com/Pbright/Blogpics/raw/master/TCP数据包图解.png" alt="TCP数据包图解.png"></p>]]></content>
+      
+      <categories>
+          
+          <category> 网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TCP </tag>
             
         </tags>
       
