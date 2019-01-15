@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>TCP_数据传输</title>
+      <link href="/2019/01/15/TCP_%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/"/>
+      <url>/2019/01/15/TCP_%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/</url>
+      <content type="html"><![CDATA[<p>一旦3次握手完成，那么双方的连接就建立好了，然后TCP 通知应用层开始传输数据传输和通信。  </p><p>TCP 按照以下步骤处理数据传输：</p><ol><li>TCP 将来自应用层协议（如 HTTP、SMTP、POP3）的消息进行“切断”为数据段(segments)；</li><li>TCP 然后传输数据段(segments)或称为消息碎片到远程主机；</li><li>TCP 在远程主机重组收到的数据段(segments)，尽管接收时顺序会乱，但数据段上都打上了“序列标签”，按照次序可完成重组。</li></ol><p>因为远程主机在每次收到数据段后都会发送 Acknowledges（确认信息）给发送者，所以 TCP 一直都知道当前的连接状态。</p>]]></content>
+      
+      <categories>
+          
+          <category> 网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TCP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>TCP_套接字</title>
       <link href="/2019/01/15/TCP_%E5%A5%97%E6%8E%A5%E5%AD%97/"/>
       <url>/2019/01/15/TCP_%E5%A5%97%E6%8E%A5%E5%AD%97/</url>
